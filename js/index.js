@@ -3,6 +3,12 @@ let limit = 12
 const limitPlus = 12
 let limitReached = false
 
+const user = document.cookie.split("=")[1]
+
+if(user != undefined && user != null) {
+  document.getElementById("a-sell").href = "dashboard.html"
+}
+
 getProducts()
 
 async function getProducts() {
@@ -48,7 +54,6 @@ config.categories.forEach(c => {
 document.getElementById("categories").innerHTML = categories
 
 
-checkAuth()
 async function checkAuth() {
   const res = await fetch(config.server + "/freesell/api/checkauth") 
   const json = await res.json()

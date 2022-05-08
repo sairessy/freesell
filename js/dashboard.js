@@ -1,7 +1,15 @@
+const user = document.cookie.split("=")[1]
+
 getProducts()
 
 async function getProducts() {
-  const res = await fetch(config.server + "/freesell/api/productsuser")
+  const res = await fetch(config.server + "/freesell/api/productsuser", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({user})
+  })
 
   const json = await res.json()
   const products = json
@@ -28,7 +36,7 @@ document.getElementById("form-update-profile").addEventListener("submit", async 
   const companyName = document.getElementById("input-company-name").value
   const contact = document.getElementById("input-contact").value
 
-  const data = {email, companyName, contact}
+  const data = {email, companyName, contact, user}
   console.log(data)
 
   const res = await fetch(config.server + "/freesell/api/updateuserprofile", {
@@ -51,7 +59,7 @@ async function getUserInfo() {
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({})
+    body: JSON.stringify({user})
   })
 
   const json = await res.json()

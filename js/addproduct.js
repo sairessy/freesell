@@ -1,3 +1,5 @@
+const user = document.cookie.split("=")[1]
+
 document.getElementById("form-add-product").addEventListener("submit", async e => {
   e.preventDefault()
 
@@ -12,7 +14,7 @@ document.getElementById("form-add-product").addEventListener("submit", async e =
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({title, price, category, location})
+    body: JSON.stringify({title, price, category, location, user})
   })
 
   const json = await res.json()
