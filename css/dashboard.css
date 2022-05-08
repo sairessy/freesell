@@ -1,0 +1,223 @@
+header {
+  height: 35px;
+  border-bottom: 1px solid #eee;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 2;
+}
+
+header #title {
+  text-transform: uppercase;
+  color: #10076a;
+  font-weight: 900;
+}
+
+#header-l {
+  display: flex;
+  align-items: center;
+}
+
+#header-r nav a {
+  margin-right: 10px;
+  text-transform: uppercase;
+  color: #10076a;
+}
+
+#btn-add {
+  margin-left: 20px;
+  padding: 10px 10px 10px 10px;
+  width: 100px;
+  padding: 20px;
+  background: url(../assets/img/plus-solid.svg) no-repeat center center/20px;
+  background-color: #10076a;
+  color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+main {
+  display: flex;
+  min-height: 100vh;
+}
+
+section {
+  flex: 1;
+}
+
+aside {
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+aside h1 {
+  background-color: #f9f9f9;
+  color: #999;
+  padding: 5px 10px;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  text-align: center;
+  border-right: 5px solid #ccc;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.product {
+  height: 310px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  position: relative;
+}
+
+.product-cover {
+  height: 200px;
+  background: url(../assets/img/image.svg) no-repeat center center/100px;
+  background-color: #f9f9f9;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.product-details {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  color: #2bccb1;
+}
+
+.product-locatiton {
+  color: #888;
+}
+
+.product-title {
+  height: 40px;
+  color: #333;
+}
+
+.product-more-details span {
+  background-color: #fff;
+  box-shadow: 0 0 2px 2px #f9f9f9;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.product-more-details span i {
+  color: #10076a;
+}
+
+.product-controlls {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.product-controlls i {
+  cursor: pointer;
+  color: orange;
+}
+
+.product-controlls i:active {
+  opacity: .6;
+}
+
+.product-more-details span:active {
+  opacity: .8;
+}
+
+#btn-more {
+  display: block;
+  margin: 20px auto;
+  width: 420px;
+  padding: 20px;
+  background-color: #ddd;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+#btn-more:active {
+  opacity: .8;
+}
+
+#form-update-profile {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#form-update-profile input {
+  padding: 12px 15px;
+  border: 1px solid #f5f5f5;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+footer {
+  margin: 20px 100px;
+  border-top: 1px solid #eee;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:  center;
+  color: #666;
+}
+
+#footer-links a {
+  margin: auto 10px;
+}
+
+@media screen and (max-width: 414px) {
+  main {
+    flex-direction: column;
+  }
+
+  #btn-add {
+    width: 30px;
+    height: 20px;
+    padding: 5px;
+    background-position: center;
+  }
+
+  aside h1 {
+    background: none;
+    border: none;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  footer {
+    margin: 20px 0;
+  }
+
+  #form-update-profile input {
+    padding: 20px 15px;
+  }
+}

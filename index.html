@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Freesell</title>
+  <link rel="stylesheet" href="libraries/css/line-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <header>
+    <div id="header-l">
+      <div id="logo-title">
+        <a href="index.html"><h1 id="title">freesell</h1></a>
+      </div>
+      <input type="search" id="input-search" placeholder="Pesquisar">
+    </div>
+    <div id="header-r">
+      <nav>
+        <a id="a-sell" href="login.html">Vender</a>
+      </nav>
+      <i id="btn-menu" class="la la-2x la-bars"></i>
+    </div>
+  </header>
+  <main>
+    <aside>
+      <h1>Categorias</h1>
+      <div id="categories"></div>
+      <video src="" width="90%" height="140" controls></video>
+    </aside>
+    <section>
+      <input type="search" id="input-search-mobile" placeholder="Pesquisar">
+      <div id="products">
+        <div class="product product-template"></div>
+        <div class="product product-template"></div>
+        <div class="product product-template"></div>
+        <div class="product product-template"></div>
+        <div class="product product-template"></div>
+        <div class="product product-template"></div>
+        <div class="product product-template"></div>
+        <div class="product product-template"></div>
+        <div class="product product-template"></div>
+        <div class="product product-template"></div>
+        <div class="product product-template"></div>
+        <div class="product product-template"></div>
+      </div>
+      <button id="btn-more"><i id="btn-more-loader" class="la la-lg la-spin la-circle-notch"></i>Mais</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>FREESELL &copy; 2022</p>
+    <div id="footer-links">
+        <a href="">Home</a>
+        <a href="">Sobre</a>
+        <a href="">Contacto</a>
+    </div>
+  </footer>
+
+  <div class="product-details-popup-container">
+    <div class="product-details-popup">
+      <div class="product-details-popup-cover"><i id="btn-close-popup-details" class="la la-2x la-remove"></i></div>
+      <p class="product-details-popup-title"></p>
+      <p class="product-details-popup-description"></p>
+      <p class="product-details-popup-location"></p>
+      <p class="product-details-popup-contact"></p>
+    </div>
+  </div>
+
+  <div id="slider-container">
+    <div id="slider">
+      <select id="select-category-slider"></select>
+    </div>
+  </div>
+
+  <script src="libraries/js/jquery-3.6.0.min.js"></script>
+  <script src="js/config.js"></script>
+  <script src="js/Product.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

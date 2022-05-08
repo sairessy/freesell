@@ -1,0 +1,34 @@
+#form-add-product {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 420px;
+  margin: 20px auto;
+  border: 1px solid #eee;
+  border-radius: 5px;
+}
+
+#product-cover {
+  background: url(../assets/img/image.svg) no-repeat center center/64px;
+  background-color: #f9f9f9;
+  height: 200px;
+}
+
+input, select {
+  margin: 10px;
+  padding: 15px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  background-color: #10076a;
+  color: #fff;
+}
+
+@media screen and (max-width: 414px) {
+  #form-add-product {
+    width: 100%;
+    border: none;
+  }
+}
