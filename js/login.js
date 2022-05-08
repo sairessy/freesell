@@ -13,7 +13,8 @@ document.getElementById("form-login").addEventListener("submit", async e => {
 
   const json = await res.json()
 
-  if(json.success) {
+  if(json != null) {
+    document.cookie = "user=" + json._id
     window.location.href = "dashboard.html"
   } else {
     alert("Usuário ou senha inválida!")

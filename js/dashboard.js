@@ -18,9 +18,7 @@ async function getProducts() {
 }
 
 document.getElementById("a-logout").addEventListener("click", async () => {
-  const res = await fetch(config.server + "/freesell/api/logout")
-  const json = await res.json()
-  console.log(json)
+  document.cookie = "user=;expires=Thu, 01 Jan 1970 00:00:00 UTC;"
   window.location.href = "index.html"
 })
 
