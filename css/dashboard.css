@@ -28,10 +28,14 @@ header #title {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 48px;
-  color: #aaa;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+#banner h1 {
+  color: #aaa;
+  font-size: 48px;
+  text-align: center;
 }
 
 #header-l {
@@ -252,6 +256,9 @@ footer {
   #banner {
     height: 150px;
     width: 100%;
+  }
+
+  #banner h1 {
     font-size: 24px;
   }
 }

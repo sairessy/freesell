@@ -97,6 +97,7 @@ section {
 #banner h1 {
   font-size: 48px;
   color: #aaa;
+  text-align: center;
 }
 
 aside {
@@ -422,6 +423,14 @@ footer {
 
   .product-details-popup-cover{
     height: 200px;
+  }
+
+  #banner {
+    height: 120px;
+  }
+
+  #banner h1 {
+    font-size: 24px;
   }
 
   footer {
