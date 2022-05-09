@@ -30,3 +30,9 @@ config.categories.forEach(c => {
   cs += `<option value="${c.id}">${c.label}</option>`
 });
 document.getElementById("select-category").innerHTML = cs
+
+let ls = ''
+config.locations.forEach(l => {
+  ls += `<option value="${l.id}">${l.label}</option>`
+});
+document.getElementById("select-location").innerHTML = ls

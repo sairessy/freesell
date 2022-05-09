@@ -1,6 +1,6 @@
 ﻿const config = {
   version: "1.0.0",
-  server: "https://controller-backend.herokuapp.com",
+   server: "https://controller-backend.herokuapp.com",
   // server: "http://localhost:8000",
   // server: "http://192.168.43.5:8000",
   categories: [
@@ -13,10 +13,16 @@
     {id: 6, label: "Consumíveis"},
     {id: 7, label: "Encomendas e eventos"},
     {id: 8, label: "Construção"},
-    {id: 9, label: "Serviços"}
+    {id: 9, label: "Serviços"},
   ], locations: [
     {id: 0, label: "Maputo"},
     {id: 1, label: "Matola"},
     {id: 2, label: "Baixa"},
+    {id: 3, label: "Museu"},
+    {id: 4, label: "Malhangalene"},
+  ],
+  quantities: [
+    {id: 0, label: "Stock"},
+    {id: 1, label: "Artigo único"}
   ]
 }

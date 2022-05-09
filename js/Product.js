@@ -4,16 +4,16 @@ const showMoreInfo = (title, price, location, description, contact) => {
   document.querySelector(".product-details-popup-description").innerText = ""
   document.querySelector(".product-details-popup-location").innerText = "Local: " + location
   document.querySelector(".product-details-popup-contact").innerText = "Contacto: " + contact
-  // alert(title)
 }
 
-const Product = (id, title, price, category, location, description, contact, date) => {
+const Product = (id, title, price, category, location, description, contact, date, user, companyName) => {
   const locationLabel = config.locations.filter(l => l.id == location)[0].label
   const d = new Date(parseInt(date))
   return(`
     <div class="product">
       <div class="product-cover">
-        <p class="product-date">${d.getDay()} de ${d.getMonth() + 1} de ${d.getFullYear()} </p>
+        <p class="product-date">${d.getDay()} de ${d.getMonth() + 1} de ${d.getFullYear()}</p>
+        ${companyName != "" ? `<a href="seller.html?s=${user}" class="product-owner" id="${user}">${companyName}</a>` : ""}
       </div>
       <div class="product-details">
         <div>

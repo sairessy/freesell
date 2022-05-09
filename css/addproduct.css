@@ -2,9 +2,10 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 420px;
+  width: 480px;
   margin: 20px auto;
-  border: 1px solid #eee;
+  border: 1px solid #ccc;
+  background-color: #fff;
   border-radius: 5px;
 }
 
@@ -14,11 +15,12 @@
   height: 200px;
 }
 
-input, select {
+input, select, textarea {
   margin: 10px;
   padding: 15px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 16px;
 }
 
 input[type="submit"] {
@@ -30,5 +32,6 @@ input[type="submit"] {
   #form-add-product {
     width: 100%;
     border: none;
+    margin: auto;
   }
 }

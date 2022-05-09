@@ -16,6 +16,8 @@ async function getProducts() {
 
   let auxProducts = ""
 
+  document.querySelector("#banner h1").innerText = products[0].companyName
+
   for (let i = 0; i < products.length; i++) {
     const product = products[i];
     const {_id, title, price, category, location} = product

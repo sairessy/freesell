@@ -27,8 +27,8 @@ async function getProducts() {
 
   for (let i = 0; i < products.length; i++) {
     const product = products[i];
-    const {_id, title, price, category, location, description, contact, date} = product
-    auxProducts += Product(_id, title, price, category, location, description, contact, date)
+    const {_id, title, price, category, location, description, contact, date, user, companyName} = product
+    auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName)
   }
 
   limit += limitPlus
@@ -96,8 +96,8 @@ document.getElementById("input-search").addEventListener("keyup", async e => {
   
       for (let i = 0; i < products.length; i++) {
         const product = products[i];
-        const {_id, title, price, category, location, description, contact, date} = product
-        auxProducts += Product(_id, title, price, category, location, description, contact, date)
+        const {_id, title, price, category, location, description, contact, date, user, companyName} = product
+        auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName)
       }
     
       document.getElementById("products").innerHTML = auxProducts
@@ -134,8 +134,8 @@ document.getElementById("input-search-mobile").addEventListener("keyup", async e
   
       for (let i = 0; i < products.length; i++) {
         const product = products[i];
-        const {_id, title, price, category, location, description, contact, date} = product
-        auxProducts += Product(_id, title, price, category, location, description, contact, date)
+        const {_id, title, price, category, location, description, contact, date, user, companyName} = product
+        auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName)
       }
     
       document.getElementById("products").innerHTML = auxProducts
@@ -151,10 +151,10 @@ document.querySelectorAll("#categories a").forEach(l => {
   l.addEventListener("click", e => {
     category = e.target.id
     document.querySelectorAll("#categories a").forEach(ll => {
-      ll.style.borderLeft = "1px solid #fcfcfc"
+      ll.style.borderLeftColor = "#eee"
     })
 
-    e.target.style.borderLeft = "1px solid #10076a"
+    e.target.style.borderLeftColor = "#10076a"
 
     limit -= limitPlus
     getProducts() 
