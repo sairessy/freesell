@@ -6,20 +6,22 @@ const showMoreInfo = (title, price, location, description, contact) => {
   document.querySelector(".product-details-popup-contact").innerText = "Contacto: " + contact
 }
 
-const Product = (id, title, price, category, location, description, contact, date, user, companyName) => {
+const Product = (id, title, price, category, location, description, contact, date, user, companyName, image) => {
   const locationLabel = config.locations.filter(l => l.id == location)[0].label
   const d = new Date(parseInt(date))
+  const img = image == null ? "assets/img/image.svg" : image
   return(`
     <div class="product">
-      <div class="product-cover">
-        <p class="product-date">${d.getDay()} de ${d.getMonth() + 1} de ${d.getFullYear()}</p>
-        ${companyName != "" ? `<a href="seller.html?s=${user}" class="product-owner" id="${user}">${companyName}</a>` : ""}
+      <div class="product-cover" style="background-image: url(${img});">
+        
       </div>
       <div class="product-details">
         <div>
           <p class="product-title">${title}</p>
-          <p class="product-price">${price} Mt</p>
+          ${companyName != "" ? `<a href="seller.html?s=${user}" class="product-owner" id="${user}">${companyName}</a>` : ""}
           <p class="product-locatiton">${locationLabel}</p>
+          <p class="product-price">$ ${price}</p>
+          <p class="product-date">${d.getDay()} de ${d.getMonth() + 1} de ${d.getFullYear()}</p>
         </div>
         <div class="product-more-details" onclick="showMoreInfo('${title}', '${price}', '${locationLabel}', '${description}', '${contact}')"><span><i class="la la-angle-right"></i></span></div>
       </div>

@@ -69,27 +69,29 @@ header #title {
 
 main {
   display: flex;
-  min-height: 100vh;
 }
 
 section {
-  /* flex: 1; */
   margin: auto;
   width: calc(100% - 300px);
 }
 
 #banner {
-  background-color: #ddd;
+  background: url(../assets/img/subtle-prism.svg);
+  background-color: #f1f1f1;
   height: 200px;
   width: calc(100% - 10px);
-  margin: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 48px;
-  color: #aaa;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+#banner h1 {
+  font-size: 48px;
+  color: #aaa;
 }
 
 aside {
@@ -137,7 +139,7 @@ aside h1 {
 }
 
 .product {
-  height: 310px;
+  height: 370px;
   border-radius: 5px;
   background-color: #fff;
   position: relative;
@@ -155,19 +157,19 @@ aside h1 {
 }
 
 .product-owner {
-  position: absolute;
-  bottom: 0;
-  left: 5px;
   font-size: 12px;
-  padding: 5px;
-  border-radius: 5px;
+  padding: 5px 0;
+  border-radius: 2px;
   color: #10076a;
   cursor: pointer;
+  width: 100%;
+  text-align: center;
+  margin: auto;
 }
 
 .product-cover {
-  height: 200px;
-  background: url(../assets/img/image.svg) no-repeat center center/100px;
+  height: 150px;
+  background: url(../assets/img/image.svg) no-repeat center center/contain;
   background-color: #f9f9f9;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -176,9 +178,6 @@ aside h1 {
 }
 
 .product-date {
-  position: absolute;
-  top: 25px;
-  left: 10px;
   color: #aaa;
   font-size: 14px;
 }
@@ -196,9 +195,6 @@ aside h1 {
 }
 
 .product-price {
-  position: absolute;
-  top: 0px;
-  left: 10px;
   color: #2bccb1;
 }
 
@@ -270,7 +266,7 @@ aside h1 {
 
 .product-details-popup-cover {
   height: 400px;
-  background: url(../assets/img/image.svg) no-repeat center center/100px;
+  background: url(../assets/img/image.svg) no-repeat center center/contain;
   background-color: #f9f9f9;
   position: relative;
 }
@@ -302,7 +298,7 @@ aside h1 {
 /* footer */
 footer {
   margin: 20px 100px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ddd;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -430,10 +426,14 @@ footer {
   }
 
   #banner {
-    height: 150px;
+    height: 120px;
     width: 100%;
-    font-size: 24px;
   }
+
+  #banner h1 {
+    font-size: 18px;
+  }
+
 
   section {
     flex: 1;

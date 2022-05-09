@@ -8,12 +8,12 @@ const remove = async (p) => {
 
 }
 
-const ProductPrivate = (id, title, price, category, location) => {
-  
+const ProductPrivate = (id, title, price, category, location, image) => {
+  const img = image == null ? "assets/img/image.svg" : image
 
   return(`
     <div class="product">
-      <div class="product-cover">
+      <div class="product-cover" style="background-image: url(${img});">
         <div class="product-controlls">
           <i class="la la-remove" onClick="remove('${id}')"></i>
         </div>
@@ -21,7 +21,7 @@ const ProductPrivate = (id, title, price, category, location) => {
       <div class="product-details">
         <div>
           <p class="product-title">${title}</p>
-          <p class="product-price">${price} Mt</p>
+          <p class="product-price">$ ${price}</p>
           <p class="product-locatiton">${config.locations.filter(l => l.id == location)[0].label}</p>
         </div>
         <div class="product-more-details"><span><i class="la la-angle-right"></i></span></div>

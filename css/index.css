@@ -81,6 +81,24 @@ section {
   flex: 1;
 }
 
+#banner {
+  background: url(../assets/img/subtle-prism.svg);
+  background-color: #f1f1f1;
+  height: 200px;
+  width: calc(100% - 10px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#banner h1 {
+  font-size: 48px;
+  color: #aaa;
+}
+
 aside {
   width: 300px;
 }
@@ -92,11 +110,10 @@ aside video {
 }
 
 aside h1 {
-  background-color: #f9f9f9;
   color: #999;
   padding: 5px 10px;
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
   text-align: left;
   border-left: 5px solid #ccc;
 }
@@ -127,7 +144,7 @@ aside h1 {
 }
 
 .product {
-  height: 310px;
+  height: 370px;
   border-radius: 5px;
   background-color: #fff;
   position: relative;
@@ -140,36 +157,27 @@ aside h1 {
 }
 
 .product-owner {
-  position: absolute;
-  bottom: 5px;
-  left: 5px;
   font-size: 12px;
-  padding: 2px;
+  padding: 5px 0;
   border-radius: 2px;
   color: #10076a;
   cursor: pointer;
-  border: 1px solid #0f076a12;
-  background-color: #0f076a03;
-  width: calc(100% - 20px);
+  width: 100%;
   text-align: center;
   margin: auto;
-
 }
 
 .product-cover {
-  height: 200px;
-  background: url(../assets/img/image.svg) no-repeat center center/100px;
+  height: 150px;
+  background: url(../assets/img/image.svg) no-repeat center center/contain;
   background-color: #f9f9f9;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   border-bottom: 1px solid #eee;
-  position: relative;
+  /* position: relative; */
 }
 
 .product-date {
-  position: absolute;
-  top: 25px;
-  left: 10px;
   color: #aaa;
   font-size: 14px;
 }
@@ -187,9 +195,6 @@ aside h1 {
 }
 
 .product-price {
-  position: absolute;
-  top: 0px;
-  left: 10px;
   color: #2bccb1;
 }
 
@@ -222,8 +227,8 @@ aside h1 {
   margin: 20px auto;
   width: 420px;
   padding: 20px;
-  background-color: #ddd;
-  box-shadow: 0 0 1px 4px #ddd;
+  background-color: #eee;
+  box-shadow: 0 0 10px 4px #f9f9f9;
   border-radius: 25px;
   cursor: pointer;
   color: #666;
@@ -295,7 +300,7 @@ aside h1 {
 /* footer */
 footer {
   margin: 20px 100px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ddd;
   height: 200px;
   display: flex;
   flex-direction: column;

@@ -20,7 +20,8 @@ header #title {
 }
 
 #banner {
-  background-color: #ddd;
+  background: url(../assets/img/subtle-prism.svg);
+  background-color: #f1f1f1;
   height: 200px;
   width: calc(100% - 10px);
   margin: auto;
@@ -106,7 +107,7 @@ aside h1 {
 
 .product-cover {
   height: 200px;
-  background: url(../assets/img/image.svg) no-repeat center center/100px;
+  background: url(../assets/img/image.svg) no-repeat center center/contain;
   background-color: #f9f9f9;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -202,7 +203,7 @@ aside h1 {
 
 footer {
   margin: 20px 100px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid #ddd;
   height: 200px;
   display: flex;
   flex-direction: column;

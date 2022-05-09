@@ -21,7 +21,8 @@ async function getProducts() {
   for (let i = 0; i < products.length; i++) {
     const product = products[i];
     const {_id, title, price, category, location} = product
-    auxProducts += ProductPrivate(_id, title, price, category, location)
+    const image = product.image != null ? product.image.data : null
+    auxProducts += ProductPrivate(_id, title, price, category, location, image)
   }
 
   document.getElementById("products").innerHTML = auxProducts
@@ -39,7 +40,6 @@ document.getElementById("form-update-profile").addEventListener("submit", async 
   const contact = document.getElementById("input-contact").value
 
   const data = {email, companyName, contact, user}
-  console.log(data)
 
   const res = await fetch(config.server + "/freesell/api/updateuserprofile", {
     method: "POST",

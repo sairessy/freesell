@@ -3,8 +3,13 @@
   font-family: rbt;
 }
 
+@font-face {
+  src: url(../assets/fonts/Roboto-regular.ttf);
+  font-family: rb;
+}
+
 :root {
-  --body-color: #eee;
+  --body-color: #fff;
 }
 
 * {
@@ -14,7 +19,7 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 button, input, select, textarea {

@@ -4,13 +4,13 @@
   flex-direction: column;
   width: 480px;
   margin: 20px auto;
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
   background-color: #fff;
   border-radius: 5px;
 }
 
 #product-cover {
-  background: url(../assets/img/image.svg) no-repeat center center/64px;
+  background: url(../assets/img/image.svg) no-repeat center center/200px;
   background-color: #f9f9f9;
   height: 200px;
 }

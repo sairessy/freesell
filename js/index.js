@@ -23,12 +23,14 @@ async function getProducts() {
   const json = await res.json()
   const products = json.products
 
+
   let auxProducts = ""
 
   for (let i = 0; i < products.length; i++) {
     const product = products[i];
+    const image = product.image != null ? product.image.data : null
     const {_id, title, price, category, location, description, contact, date, user, companyName} = product
-    auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName)
+    auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName, image)
   }
 
   limit += limitPlus
@@ -96,8 +98,9 @@ document.getElementById("input-search").addEventListener("keyup", async e => {
   
       for (let i = 0; i < products.length; i++) {
         const product = products[i];
+        const image = product.image != null ? product.image.data : null
         const {_id, title, price, category, location, description, contact, date, user, companyName} = product
-        auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName)
+        auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName, image)
       }
     
       document.getElementById("products").innerHTML = auxProducts
@@ -134,8 +137,9 @@ document.getElementById("input-search-mobile").addEventListener("keyup", async e
   
       for (let i = 0; i < products.length; i++) {
         const product = products[i];
+        const image = product.image != null ? product.image.data : null
         const {_id, title, price, category, location, description, contact, date, user, companyName} = product
-        auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName)
+        auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName, image)
       }
     
       document.getElementById("products").innerHTML = auxProducts
@@ -151,7 +155,7 @@ document.querySelectorAll("#categories a").forEach(l => {
   l.addEventListener("click", e => {
     category = e.target.id
     document.querySelectorAll("#categories a").forEach(ll => {
-      ll.style.borderLeftColor = "#eee"
+      ll.style.borderLeftColor = "#fff"
     })
 
     e.target.style.borderLeftColor = "#10076a"
