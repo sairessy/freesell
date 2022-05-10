@@ -1,6 +1,6 @@
 let category = ""
-let limit = 12
-const limitPlus = 12
+let limit = 24
+const limitPlus = 24
 let limitReached = false
 
 const user = document.cookie.split("=")[1]
@@ -23,6 +23,7 @@ async function getProducts() {
   const json = await res.json()
   const products = json.products
 
+  console.log(products)
 
   let auxProducts = ""
 

@@ -69,7 +69,8 @@ document.getElementById('product-cover').addEventListener('click', (evt) => {
     }
 
     image = {
-      data: reader.result
+      data: reader.result,
+      ext: ext
     }
 
     evt.target.style.backgroundImage = `url(${image.data})`

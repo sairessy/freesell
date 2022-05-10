@@ -148,12 +148,15 @@ aside h1 {
 
 .product-template {
   background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
 }
 
-.product-template {
-  background-color: #f9f9f9;
-  border: none;
+.product-template i {
+  color: #ddd;
+  font-size: 36px;
 }
 
 .product-owner {
@@ -170,7 +173,7 @@ aside h1 {
 .product-cover {
   height: 150px;
   background: url(../assets/img/image.svg) no-repeat center center/contain;
-  background-color: #f9f9f9;
+  background-color: #fff;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   border-bottom: 1px solid #eee;
@@ -298,7 +301,7 @@ aside h1 {
 /* footer */
 footer {
   margin: 20px 100px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #eee;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -426,12 +429,12 @@ footer {
   }
 
   #banner {
-    height: 120px;
+    height: 100px;
     width: 100%;
   }
 
   #banner h1 {
-    font-size: 18px;
+    font-size: 24px;
   }
 
 
