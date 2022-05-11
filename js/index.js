@@ -23,8 +23,6 @@ async function getProducts() {
   const json = await res.json()
   const products = json.products
 
-  console.log(products)
-
   let auxProducts = ""
 
   for (let i = 0; i < products.length; i++) {

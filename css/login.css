@@ -12,7 +12,7 @@ body {
 #form-login > a {
   text-align: right;
   margin-right: 20px;
-  font-family: rb; 
+  font-family: rbt; 
 }
 
 #form-header {
@@ -24,10 +24,7 @@ body {
 }
 
 #form-header .a-link {
-  border-radius: 25px;
   padding: 5px 20px;
-  color: #fff;
-  background-color: #000;
 }
 
 input {

@@ -1,5 +1,8 @@
 document.getElementById("form-login").addEventListener("submit", async e => {
   e.preventDefault()
+  document.getElementById("btn-submit-login").disabled = true
+  document.getElementById("btn-submit-login").style.backgroundColor = "#ddd"
+
   const email = document.getElementById("input-email").value
   const pass = document.getElementById("input-pass").value
 
@@ -18,6 +21,8 @@ document.getElementById("form-login").addEventListener("submit", async e => {
     window.location.href = "dashboard.html"
   } else {
     alert("Usuário ou senha inválida!")
+    document.getElementById("btn-submit-login").disabled = false
+    document.getElementById("btn-submit-login").style.backgroundColor = "#10076a"
   }
 })
 
