@@ -1,5 +1,9 @@
 const user = document.cookie.split("=")[1]
 
+if(user == undefined || user == null) {
+  window.location.href = "login.html"
+}
+
 getProducts()
 
 async function getProducts() {

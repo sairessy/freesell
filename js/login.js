@@ -1,3 +1,9 @@
+const user = document.cookie.split("=")[1]
+
+if(user != undefined && user != null) {
+  window.location.href = "dashboard.html"
+}
+
 document.getElementById("form-login").addEventListener("submit", async e => {
   e.preventDefault()
   document.getElementById("btn-submit-login").disabled = true
