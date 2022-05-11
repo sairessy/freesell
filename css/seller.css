@@ -13,7 +13,7 @@
 header {
   height: 35px;
   border-top: 5px solid #10076a;
-  /* border-bottom: 1px solid #eee; */
+  border-bottom: 1px solid #ddd;
   box-shadow: 2px 0 6px #ddd;
   padding: 15px;
   display: flex;
@@ -26,7 +26,6 @@ header {
 }
 
 header #title {
-  text-transform: uppercase;
   color: #10076a;
   font-weight: 900;
 }
@@ -42,13 +41,14 @@ header #title {
 }
 
 #a-sell {
-  background-color: #10076a;
+  background-color: #fff;
   padding: 10px;
   width: 170px;
   display: inline-block;
   text-align: center;
   border-radius: 2px;
-  box-shadow: 0 0 2px 2px #f9f9f9;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 #input-search {
@@ -92,6 +92,7 @@ section {
 #banner h1 {
   font-size: 48px;
   color: #aaa;
+  font-family: tt;
 }
 
 aside {

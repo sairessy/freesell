@@ -18,7 +18,7 @@ const Product = (id, title, price, category, location, description, contact, dat
       <div class="product-details">
         <div>
           <p class="product-title">${title}</p>
-          ${companyName != "" ? `<a href="seller.html?s=${user}" class="product-owner" id="${user}">${companyName}</a>` : ""}
+          ${companyName != "" ? `<a href="seller.html?s=${user}" style="font-family: tt;" class="product-owner" id="${user}">${companyName}</a>` : ""}
           <p class="product-locatiton">${locationLabel}</p>
           <p class="product-price">$ ${price}</p>
           <p class="product-date">${d.getDay()} de ${d.getMonth() + 1} de ${d.getFullYear()}</p>

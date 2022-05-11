@@ -6,6 +6,8 @@ document.getElementById("form-add-product").addEventListener("submit", async e =
   e.preventDefault()
 
   document.getElementById("btn-submit-product").disabled = true
+  document.getElementById("btn-submit-product").style.backgroundColor = "#ddd"
+
   const title = document.getElementById("input-title").value
   const price = document.getElementById("input-price").value
   const category = document.getElementById("select-category").value
@@ -25,6 +27,7 @@ document.getElementById("form-add-product").addEventListener("submit", async e =
   document.getElementById("input-title").value = ""
   document.getElementById("input-price").value = ""
   document.getElementById("btn-submit-product").disabled = false
+  document.getElementById("btn-submit-product").style.backgroundColor = "#10076a"
 })
 
 let cs = ''

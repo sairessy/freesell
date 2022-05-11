@@ -1,7 +1,7 @@
 header {
   height: 35px;
   border-top: 5px solid #10076a;
-  /* border-bottom: 1px solid #eee; */
+  border-bottom: 1px solid #ddd;
   box-shadow: 2px 0 6px #ddd;
   padding: 15px;
   display: flex;
@@ -14,7 +14,6 @@ header {
 }
 
 header #title {
-  text-transform: uppercase;
   color: #10076a;
   font-weight: 900;
 }
@@ -36,6 +35,7 @@ header #title {
   color: #aaa;
   font-size: 48px;
   text-align: center;
+  font-family: tt;
 }
 
 #header-l {
@@ -52,14 +52,16 @@ header #title {
 #btn-add {
   margin-left: 20px;
   padding: 10px 10px 10px 10px;
-  width: 100px;
   padding: 20px;
   background: url(../assets/img/plus-solid.svg) no-repeat center center/20px;
-  background-color: #10076a;
-  color: #fff;
+  background-color: #fff;
   border-radius: 2px;
   cursor: pointer;
   text-align: center;
+  width: 170px;
+  display: inline-block;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 
