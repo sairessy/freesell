@@ -9,7 +9,8 @@
 }
 
 :root {
-  --body-color: #fff;
+  --body-color: #fff; 
+  /* --primary-color: #3f3f5a; */
   --primary-color: #10076a;
 }
 
@@ -20,7 +21,7 @@
 body {
   padding: 0;
   margin: 0;
-  /* background-color: #eee; */
+  background-color: var(--body-color);
 }
 
 #title {
@@ -44,5 +45,9 @@ button:active, input[type="submit"]:active {
 
 a {
   text-decoration: none;
-  color: #10076a;
+  color: var(--primary-color);
+}
+
+footer > p span {
+  font-family: tt;
 }

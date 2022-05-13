@@ -26,7 +26,10 @@ document.getElementById("form-login").addEventListener("submit", async e => {
     document.cookie = "user=" + json._id
     window.location.href = "dashboard.html"
   } else {
-    alert("Usuário ou senha inválida!")
+    $(".error-msg span").fadeIn()
+    setTimeout(() => {
+      $(".error-msg span").fadeOut()
+    }, 2000);
     document.getElementById("btn-submit-login").disabled = false
     document.getElementById("btn-submit-login").style.backgroundColor = "#10076a"
   }

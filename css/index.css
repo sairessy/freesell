@@ -12,7 +12,7 @@
 
 header {
   height: 35px;
-  border-top: 5px solid #10076a;
+  border-top: 5px solid var(--primary-color);
   border-bottom: 1px solid #ddd;
   box-shadow: 2px 0 6px #ddd;
   padding: 15px;
@@ -26,7 +26,7 @@ header {
 }
 
 header #title {
-  color: #10076a;
+  color: var(--primary-color);
   font-weight: 900;
   font-family: tt;
 }
@@ -68,7 +68,7 @@ header #title {
   width: 240px;
   background: url(../assets/img/store-alt-solid.svg) no-repeat 10px center/20px;
   background-color: #f9f9f9;
-  display: none;
+  /* display: none; */
 }
 
 #input-search:focus, #input-search-seller:focus {
@@ -120,27 +120,25 @@ aside h1 {
   background-color: #f9f9f9;
   margin: 0;
   margin-bottom: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
   text-align: left;
 }
 
 #categories {
   display: flex;
   flex-direction: column;
-  padding: 0 30px;
+  padding: 0 0;
+  margin: 0;
 }
 
 #categories a {
-  border-left-width: 1px;
-  border-left-style: dotted;
+  border-left-width: 5px;
+  border-left-style: solid;
   border-left-color: var(--body-color);
-  margin-bottom: 10px;
-  padding-left: 10px;
+  padding: 5px 20px;
 }
 
 #categories a:nth-child(1) {
-  border-left-color: #10076a;
+  border-left-color: var(--primary-color);
 }
 
 #products {
@@ -151,11 +149,11 @@ aside h1 {
 }
 
 .product {
-  height: 370px;
+  height: 350px;
   border-radius: 5px;
   background-color: #fff;
   position: relative;
-  border: 1px solid #eee;
+  border: 1px solid #f9f9f9;
 }
 
 .product-template {
@@ -172,10 +170,10 @@ aside h1 {
 }
 
 .product-owner {
-  font-size: 12px;
+  font-size: 14px;
   padding: 5px 0;
   border-radius: 2px;
-  color: #10076a;
+  color: var(--primary-color);
   cursor: pointer;
   width: 100%;
   text-align: center;
@@ -183,18 +181,17 @@ aside h1 {
 }
 
 .product-cover {
-  height: 150px;
+  height: 130px;
   background: url(../assets/img/image.svg) no-repeat center center/contain;
   background-color: #fff;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   border-bottom: 1px solid #eee;
-  /* position: relative; */
 }
 
 .product-date {
   color: #aaa;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .product-details {
@@ -230,7 +227,7 @@ aside h1 {
 }
 
 .product-more-details span i {
-  color: #10076a;
+  color: var(--primary-color);
 }
 
 .product-more-details span:active {
@@ -397,7 +394,7 @@ footer {
 
   #btn-menu {
     display: inline-block;
-    color: #10076a;
+    color: var(--primary-color);
     margin-left: 10px;
   }
 

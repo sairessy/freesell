@@ -17,7 +17,7 @@ document.getElementById("a-recovery").addEventListener("click", async () => {
 
   
   if(json.err !== undefined) {
-    alert("Houve um erro!")
+    alert("Houve um erro, certifique-se de introduzir correctamente o email!")
     return
   }
 

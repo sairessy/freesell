@@ -1,6 +1,6 @@
 let category = ""
-let limit = 24
-const limitPlus = 24
+let limit = 12
+const limitPlus = 12
 let limitReached = false
 
 const user = document.cookie.split("=")[1]
@@ -10,6 +10,29 @@ if(user != undefined && user != null) {
 }
 
 getProducts()
+getSellers()
+
+
+function doSome() {
+  alert("x")
+}
+
+async function getSellers() {
+  const res = await fetch(config.server + "/freesell/api/users")
+  const json = await res.json()
+  let sellers = ""
+
+  json.forEach(s => {
+    sellers += `<option value="${s.companyName}" onSelect="doSome();"></option>`
+  })
+
+  document.getElementById("datalist-sellers").innerHTML = sellers
+}
+
+
+document.getElementById("datalist-sellers").addEventListener("change", e => {
+  console.log(e.target.value)
+})
 
 async function getProducts() {
   const res = await fetch(config.server + "/freesell/api/products", {
@@ -154,10 +177,10 @@ document.querySelectorAll("#categories a").forEach(l => {
   l.addEventListener("click", e => {
     category = e.target.id
     document.querySelectorAll("#categories a").forEach(ll => {
-      ll.style.borderLeftColor = "#fff"
+      ll.style.borderLeftColor = config.colors.bodyColor
     })
 
-    e.target.style.borderLeftColor = "#10076a"
+    e.target.style.borderLeftColor = config.colors.primary
 
     limit -= limitPlus
     getProducts() 

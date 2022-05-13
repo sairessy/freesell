@@ -24,7 +24,7 @@ input, select, textarea {
 }
 
 input[type="submit"] {
-  background-color: #10076a;
+  background-color: var(--primary-color);
   color: #fff;
 }
 

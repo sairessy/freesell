@@ -30,6 +30,17 @@ document.getElementById("form-login").addEventListener("submit", async e => {
 
   const json = await res.json()
 
+  if(json.err != undefined) {
+    $(".error-msg span").fadeIn()
+    setTimeout(() => {
+      $(".error-msg span").fadeOut()
+    }, 2000);
+    document.getElementById("btn-submit-signup").disabled = false
+    document.getElementById("btn-submit-signup").style.backgroundColor = "#10076a"
+    return
+  }
+  
+
   alert("Registado com sucesso!")
   window.location.href = "login.html"
 })

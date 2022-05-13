@@ -31,7 +31,7 @@ document.getElementById("form-recovery-pass").addEventListener("submit", async e
     alert("Senha alterada com sucesso!")
     window.location.href = "login.html"
   } else {
-    alert("Houve um erro!")
+    alert("Houve um erro, o link pode ter sido invalidado!")
   }
 
   document.getElementById("btn-submit-recovery").disabled = false

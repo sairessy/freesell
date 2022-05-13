@@ -12,12 +12,15 @@
 <body>
   <form id="form-login">
     <div id="form-header">
-      <a href="index.html"><h1 id="title">free$ell</h1></a>
-      <a class="a-link" href="login.html">Login</a>
+      <a href="index.html"><h1 id="title">Open$tore</h1></a>
+      <a class="a-link" href="login.html">LOGIN</a>
     </div>
-    <input type="email" placeholder="Email" id="input-email">
-    <input type="password" placeholder="Senha" id="input-pass">
-    <input type="password" placeholder="Confirmar senha" id="input-c-pass">
+    <input type="email" placeholder="Email" id="input-email" required>
+    <input type="password" placeholder="Senha" id="input-pass" required minlength="6">
+    <input type="password" placeholder="Confirmar senha" id="input-c-pass" required>
+    <p class="error-msg">
+      <span>O email já foi usado, pode recuperá-lo!</span>
+    </p>
     <div class="show-pass">
       <input type="checkbox" id="checkbox-show-pass">
       <label for="checkbox-show-pass">Mostrar senha</label>
@@ -26,6 +29,7 @@
     <input type="submit" value="Sign Up" id="btn-submit-signup">
   </form>
 
+  <script src="libraries/js/jquery-3.6.0.min.js"></script>
   <script src="js/sendRecoveryCode.js"></script>
   <script src="js/config.js"></script>
   <script src="js/signUp.js"></script>

@@ -31,11 +31,22 @@ input {
   padding: 20px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  accent-color: #10076a;
+  accent-color: var(--primary-color);
+}
+
+.error-msg {
+  color: red;
+  margin: 5px auto 0 20px;
+  font-size: 14px;
+  height: 20px;
+}
+
+.error-msg span {
+  display: none;
 }
 
 input[type="submit"] {
-  background-color: #10076a;
+  background-color: var(--primary-color);
   color: #fff;
   cursor: pointer;
 }
