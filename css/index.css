@@ -154,10 +154,11 @@ aside h1 {
   background-color: #fff;
   position: relative;
   border: 1px solid #f9f9f9;
+  border-top: 5px solid #eee;
 }
 
 .product-template {
-  background-color: #f9f9f9;
+  background-color: #eee;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,6 +188,7 @@ aside h1 {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   border-bottom: 1px solid #eee;
+  margin-top: 5px;
 }
 
 .product-date {

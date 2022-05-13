@@ -140,11 +140,12 @@ aside h1 {
 }
 
 .product {
-  height: 370px;
+  height: 350px;
   border-radius: 5px;
   background-color: #fff;
   position: relative;
-  border: 1px solid #eee;
+  border: 1px solid #f9f9f9;
+  border-top: 5px solid #eee;
 }
 
 .product-template {
@@ -172,13 +173,13 @@ aside h1 {
 }
 
 .product-cover {
-  height: 150px;
+  height: 130px;
   background: url(../assets/img/image.svg) no-repeat center center/contain;
   background-color: #fff;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   border-bottom: 1px solid #eee;
-  position: relative;
+  margin-top: 5px;
 }
 
 .product-date {

@@ -22,7 +22,7 @@ const Product = (id, title, price, category, location, description, contact, dat
           <p class="product-price">$ ${price}</p>
           ${companyName != "" ? `<a href="seller.html?s=${user}" style="font-family: tt;" class="product-owner" id="${user}">${companyName}</a>` : ""}
           <p class="product-locatiton">${locationLabel}</p>
-          <p class="product-date">${d}</p>
+          <p class="product-date">${d.toLocaleString("pt-Br")}</p>
         </div>
         <div class="product-more-details" onclick="showMoreInfo('${title}', '${price}', '${locationLabel}', '${description}', '${contact}')"><span><i class="la la-angle-right"></i></span></div>
       </div>
