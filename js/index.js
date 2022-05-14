@@ -1,6 +1,6 @@
 let category = ""
-let limit = 12
-const limitPlus = 12
+let limit = 4
+const limitPlus = 4
 let limitReached = false
 
 const user = document.cookie.split("=")[1]
@@ -12,26 +12,23 @@ if(user != undefined && user != null) {
 getProducts()
 getSellers()
 
-
-function doSome() {
-  alert("x")
-}
-
 async function getSellers() {
   const res = await fetch(config.server + "/freesell/api/users")
   const json = await res.json()
   let sellers = ""
 
   json.forEach(s => {
-    sellers += `<option value="${s.companyName}" onSelect="doSome();"></option>`
+    sellers += `<option value="${s.companyName}"></option>`
   })
 
   document.getElementById("datalist-sellers").innerHTML = sellers
 }
 
 
-document.getElementById("datalist-sellers").addEventListener("change", e => {
-  console.log(e.target.value)
+document.getElementById("input-search-seller").addEventListener("change", async e => {
+  const res = await fetch(config.server + "/freesell/api/user/" + e.target.value)
+  const json = await res.json()
+  window.location.href = "seller.html?s=" + json._id
 })
 
 async function getProducts() {

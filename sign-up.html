@@ -8,11 +8,17 @@
   <link rel="shortcut icon" href="assets/img/fslogo.png" type="image/x-icon">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/sign-up.css">
+  <script src="libraries/js/jquery-3.6.0.min.js"></script>
+  <script src="js/config.js"></script>
 </head>
 <body>
   <form id="form-login">
     <div id="form-header">
-      <a href="index.html"><h1 id="title">free$ell</h1></a>
+      <a href="index.html">
+        <h1 id="title">
+          <script>document.write(config.title)</script>
+        </h1>
+      </a>
       <a class="a-link" href="login.html">LOGIN</a>
     </div>
     <input type="email" placeholder="Email" id="input-email" required>
@@ -29,9 +35,7 @@
     <input type="submit" value="Sign Up" id="btn-submit-signup">
   </form>
 
-  <script src="libraries/js/jquery-3.6.0.min.js"></script>
   <script src="js/sendRecoveryCode.js"></script>
-  <script src="js/config.js"></script>
   <script src="js/signUp.js"></script>
 </body>
 </html>

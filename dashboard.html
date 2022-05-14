@@ -9,12 +9,18 @@
   <link rel="stylesheet" href="libraries/css/line-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/dashboard.css">
+  <script src="libraries/js/jquery-3.6.0.min.js"></script>
+  <script src="js/config.js"></script>
 </head>
 <body>
   <header>
     <div id="header-l">
       <div id="logo-title">
-        <a href="index.html"><h1 id="title">free$ell</h1></a>
+        <a href="index.html">
+          <h1 id="title">
+            <script>document.write(config.title)</script>
+          </h1>
+        </a>
       </div>
       <a href="addproduct.html" id="btn-add"></i></a>
     </div>
@@ -51,13 +57,19 @@
         <input type="email" id="input-email" placeholder="Email">
         <input type="text" id="input-company-name" placeholder="Nome da organização">
         <input type="text" id="input-contact" placeholder="Contacto">
+        <select id="select-company-type">
+          <option value="">Geral</option>
+          <option value="0">Loja</option>
+          <option value="1">Farmácia</option>
+          <option value="2">Ferragem</option>
+        </select>
         <input type="submit" value="Actualizar">
       </form>
     </aside>
   </main>
 
   <footer>
-    <p><span>free$ell</span> &copy; 2022</p>
+    <p><span><script>document.write(config.title)</script></span> &copy; 2022</p>
     <div id="footer-links">
         <a href="">Home</a>
         <a href="">Sobre</a>
@@ -65,7 +77,6 @@
     </div>
   </footer>
 
-  <script src="js/config.js"></script>
   <script src="js/ProductPrivate.js"></script>
   <script src="js/dashboard.js"></script>
 </body>

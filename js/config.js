@@ -1,4 +1,5 @@
 ﻿const config = {
+  title: "free$ell",
   version: "1.0.0",
   //  server: "https://controller-backend.herokuapp.com",
   server: "https://controller-backend.glitch.me",
@@ -25,6 +26,11 @@
     {id: 2, label: "Baixa"},
     {id: 3, label: "Museu"},
     {id: 4, label: "Malhangalene"},
+  ],
+  companyType: [
+    {id: 0, label: "Loja"},
+    {id: 1, label: "Farmácia"},
+    {id: 2, label: "Ferragem"}
   ],
   quantities: [
     {id: 0, label: "Stock"},

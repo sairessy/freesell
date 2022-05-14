@@ -9,13 +9,19 @@
   <link rel="stylesheet" href="libraries/css/line-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/index.css">
+  <script src="libraries/js/jquery-3.6.0.min.js"></script>
+  <script src="js/config.js"></script>
 </head>
 <body>
   <header>
     <div id="header-l">
       <div id="logo-title">
         <!-- Market$pace, free$sell -->
-        <a href="index.html"><h1 id="title">free$ell</h1></a>
+        <a href="index.html">
+          <h1 id="title">
+            <script>document.write(config.title)</script>
+          </h1>
+        </a>
       </div>
       <input type="search" id="input-search" placeholder="Pesquisar producto ou serviço">
       <form action="">
@@ -39,7 +45,7 @@
     </aside>
     <section>
       <div id="banner">
-        <h1>Venda de tudo gratuitamente!</h1>
+        <h1>Seus productos no bolso do cliente!</h1>
       </div>
       <input type="search" id="input-search-mobile" placeholder="Pesquisar">
       <div id="products">
@@ -61,7 +67,7 @@
   </main>
 
   <footer>
-    <p><span>free$ell</span> &copy; 2022</p>
+    <p><span><script>document.write(config.title)</script></span> &copy; 2022</p>
     <div id="footer-links">
         <a href="">Home</a>
         <a href="">Sobre</a>
@@ -85,8 +91,7 @@
     </div>
   </div>
 
-  <script src="libraries/js/jquery-3.6.0.min.js"></script>
-  <script src="js/config.js"></script>
+  
   <script src="js/Product.js"></script>
   <script src="js/index.js"></script>
 </body>

@@ -88,7 +88,6 @@ section {
   background: url(../assets/img/subtle-prism.svg);
   background-color: #f1f1f1;
   height: 150px;
-  width: calc(100% - 10px);
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -154,11 +153,11 @@ aside h1 {
   background-color: #fff;
   position: relative;
   border: 1px solid #f9f9f9;
-  border-top: 5px solid #eee;
+  border-top: 3px solid #eee;
 }
 
 .product-template {
-  background-color: #eee;
+  background-color: #fcfcfc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -440,6 +439,7 @@ footer {
 
   #banner {
     height: 100px;
+    width: 100%;
   }
 
   #banner h1 {
@@ -452,5 +452,12 @@ footer {
 
   #input-search-seller {
     display: none;
+  }
+
+  #products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 5px;
+    padding: 10px;
   }
 }
