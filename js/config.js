@@ -1,5 +1,5 @@
 ﻿const config = {
-  title: "free$ell",
+  title: "Open$store",
   version: "1.0.0",
   //  server: "https://controller-backend.herokuapp.com",
   server: "https://controller-backend.glitch.me",
