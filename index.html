@@ -45,9 +45,21 @@
     </aside>
     <section>
       <div id="banner">
+        <div id="stores">
+          <div class="store"><i class="la la-ellipsis-h"></i></div>
+          <div class="store"></div>
+          <div class="store"></div>
+          <div class="store"></div>
+          <div class="store"></div>
+          <div class="store"></div>
+          <div class="store"></div>
+          <div class="store"><i class="la la-ellipsis-h"></i></div>
+        </div>
         <h1>Seus productos no bolso do cliente!</h1>
       </div>
-      <input type="search" id="input-search-mobile" placeholder="Pesquisar">
+      <form action="" id="form-search-mobile">
+        <input type="search" id="input-search-mobile" placeholder="Pesquisar producto ou serviço">
+      </form>
       <div id="products">
         <div class="product product-template"><i class="la la-ellipsis-h"></i></div>
         <div class="product product-template"><i class="la la-ellipsis-h"></i></div>
@@ -67,11 +79,25 @@
   </main>
 
   <footer>
-    <p><span><script>document.write(config.title)</script></span> &copy; 2022</p>
-    <div id="footer-links">
-        <a href="">Home</a>
-        <a href="">Sobre</a>
-        <a href="">Contacto</a>
+    <div class="left">
+      <p><span>&copy; <script>document.write(config.title)</script></span></p>
+      <div id="footer-stores">
+        <a href="#"><img src="assets/img/ad-app-store.png" alt=""></a>
+        <a href="#"><img src="assets/img/ad-gg-play.png" alt=""></a>
+      </div>
+    </div>
+    <div class="center">
+      <p><i class="la la-phone-square"></i><span>+258 872 081 978</span></p>
+      <p><i class="la la-at"></i> brokenrock.mailer@gmail.com</p>
+      <p><i class="la la-facebook-square"></i>https://facebook.com/digitalsolutions</p>
+      <p><i class="la la-map-marker"></i> Maputo, Av. Joaquim Chissano</p>
+    </div>
+    <div class="right">
+      <form id="form-feedback">
+        <textarea name="" id="textarea-feedback" cols="30" rows="3" placeholder="Feedback" required></textarea>
+        <input type="email" id="input-feedback-email" placeholder="Email" required>
+        <input type="submit" id="input-submit-feedback" value="Enviar">
+      </form>
     </div>
   </footer>
 
@@ -91,7 +117,7 @@
     </div>
   </div>
 
-  
+  <script src="js/feedback.js"></script>
   <script src="js/Product.js"></script>
   <script src="js/index.js"></script>
 </body>

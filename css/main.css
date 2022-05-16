@@ -4,18 +4,24 @@
 }
 
 @font-face {
+  src: url(../assets/fonts/Roboto-Regular.ttf);
+  font-family: rbtr;
+}
+
+@font-face {
   src: url(../assets/fonts/Macondo-Regular.ttf);
   font-family: tt;
 }
 
+/* --primary-color: #3f3f5a; */
+
 :root {
   --body-color: #f9f9f9; 
-  /* --primary-color: #3f3f5a; */
   --primary-color: #10076a;
 }
 
 * {
-  font-family: rbt;
+  font-family: rbtr;
 }
 
 body {
@@ -32,6 +38,7 @@ button, input, select, textarea {
   outline: none;
   border: none;
   font-size: 16px;
+  accent-color: var(--primary-color);
 }
 
 input[type="submit"] {
@@ -48,6 +55,78 @@ a {
   color: var(--primary-color);
 }
 
-footer > p span {
+/* footer */
+footer {
+  border-top: 1px solid #eee;
+  margin: 20px 100px;
+  padding: 10px 5px;
+  height: 200px;
+  display: flex;
+  align-items:  center;
+  justify-content: space-around;
+  color: #666;
+}
+
+footer form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer form input, footer form textarea {
+  padding: 5px;
+  margin-bottom: 12px;
+  border-radius: 2px;
+  /* background-color: rgba(255, 255, 255, 0.287) !important; */
+  border: 1px solid #f2f2f2;
+  font-size: 14px;
+}
+
+footer form input[type="email"], footer form textarea {
+  background: none;
+  color: #222;
+}
+
+footer form input[type="submit"] {
+  background-color: #eee !important;
+  color: #666;
+}
+
+footer .center p i {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #2bccb1;
+}
+
+#footer-links a {
+  margin: auto 10px;
+}
+
+footer .left p span {
+  font-size: 18px;
   font-family: tt;
 }
+
+
+@media screen and (max-width: 414px) {
+
+  footer {
+    height: auto;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  footer > div {
+    width: calc(100% - 10px);
+  }
+
+  footer form input, footer form textarea {
+    padding: 17px;
+  }
+
+  footer .left {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+

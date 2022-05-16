@@ -42,6 +42,8 @@ document.getElementById("form-update-profile").addEventListener("submit", async 
   const email = document.getElementById("input-email").value
   const companyName = document.getElementById("input-company-name").value
   const contact = document.getElementById("input-contact").value
+  const location = document.getElementById("select-location").value
+  const companyType = document.getElementById("select-company-type").value
 
   const data = {email, companyName, contact, user}
 

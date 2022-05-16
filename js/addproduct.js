@@ -11,23 +11,24 @@ document.getElementById("form-add-product").addEventListener("submit", async e =
   const title = document.getElementById("input-title").value
   const price = document.getElementById("input-price").value
   const category = document.getElementById("select-category").value
-  const location = document.getElementById("select-location").value
+  const promotional = document.getElementById("promotional").checked
 
   const res = await fetch(config.server + "/freesell/api/addproduct", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({title, price, category, location, user, image})
+    body: JSON.stringify({title, price, category, location: "0", user, image, promotional})
   })
 
   const json = await res.json()
 
   alert("Producto adicionado com sucesso!")
-  document.getElementById("input-title").value = ""
-  document.getElementById("input-price").value = ""
-  document.getElementById("btn-submit-product").disabled = false
-  document.getElementById("btn-submit-product").style.backgroundColor = "#10076a"
+  window.location.href = "dashboard.html"
+  // document.getElementById("input-title").value = ""
+  // document.getElementById("input-price").value = ""
+  // document.getElementById("btn-submit-product").disabled = false
+  // document.getElementById("btn-submit-product").style.backgroundColor = "#10076a"
 })
 
 let cs = ''
@@ -35,13 +36,6 @@ config.categories.forEach(c => {
   cs += `<option value="${c.id}">${c.label}</option>`
 });
 document.getElementById("select-category").innerHTML = cs
-
-let ls = ''
-config.locations.forEach(l => {
-  ls += `<option value="${l.id}">${l.label}</option>`
-});
-document.getElementById("select-location").innerHTML = ls
-
 
 // Image
 

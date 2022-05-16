@@ -63,20 +63,42 @@
           <option value="1">Farmácia</option>
           <option value="2">Ferragem</option>
         </select>
+        <select id="select-location">
+          <option value="0">Matola</option>
+          <option value="1">Baixa</option>
+          <option value="2">Museu</option>
+          <option value="3">Maxava</option>
+          <option value="4">Malhangalene</option>
+        </select>
         <input type="submit" value="Actualizar">
       </form>
     </aside>
   </main>
 
   <footer>
-    <p><span><script>document.write(config.title)</script></span> &copy; 2022</p>
-    <div id="footer-links">
-        <a href="">Home</a>
-        <a href="">Sobre</a>
-        <a href="">Contacto</a>
+    <div class="left">
+      <p><span>&copy; <script>document.write(config.title)</script></span></p>
+      <div id="footer-stores">
+        <a href="#"><img src="assets/img/ad-app-store.png" alt=""></a>
+        <a href="#"><img src="assets/img/ad-gg-play.png" alt=""></a>
+      </div>
+    </div>
+    <div class="center">
+      <p><i class="la la-phone-square"></i><span>+258 872 081 978</span></p>
+      <p><i class="la la-at"></i> brokenrock.mailer@gmail.com</p>
+      <p><i class="la la-facebook-square"></i>https://facebook.com/digitalsolutions</p>
+      <p><i class="la la-map-marker"></i> Maputo, Av. Joaquim Chissano</p>
+    </div>
+    <div class="right">
+      <form id="form-feedback">
+        <textarea name="" id="textarea-feedback" cols="30" rows="3" placeholder="Feedback"></textarea>
+        <input type="email" id="input-feedback-email" placeholder="Email">
+        <input type="submit" id="input-submit-feedback" value="Enviar">
+      </form>
     </div>
   </footer>
 
+  <script src="js/feedback.js"></script>
   <script src="js/ProductPrivate.js"></script>
   <script src="js/dashboard.js"></script>
 </body>

@@ -9,7 +9,6 @@ const showMoreInfo = (title, price, location, description, contact) => {
 const Product = (id, title, price, category, location, description, contact, date, user, companyName, image) => {
   const locationLabel = config.locations.filter(l => l.id == location)[0].label
   const d = new Date(parseInt(date))
-  console.log(d)
   const img = image == null ? "assets/img/image.svg" : image
   return(`
     <div class="product">

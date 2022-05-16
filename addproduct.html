@@ -16,12 +16,15 @@
     <input type="text" placeholder="Título" id="input-title">
     <input type="text" placeholder="Preço" id="input-price">
     <select id="select-category"></select>
-    <select id="select-location"></select>
     <select id="select-quantity">
       <option value="0">Stock</option>
       <option value="1">Artigo único</option>
     </select>
-    <textarea name="" id="textarea-description" cols="30" rows="10" placeholder="Descreva o produto ou serviço"></textarea>
+    <div id="product-promotional">
+      <input type="checkbox" id="promotional">
+      <label for="promotional">Promocional</label>
+    </div>
+    <textarea name="" id="textarea-description" cols="30" rows="5" placeholder="Descreva o produto ou serviço"></textarea>
     <input type="submit" id="btn-submit-product" value="Adicionar">
   </form>
 

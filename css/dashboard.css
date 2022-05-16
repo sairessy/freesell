@@ -213,26 +213,11 @@ aside h1 {
   font-size: 14px;
 }
 
-input, select, textarea {
+#form-update-profile input, #form-update-profile select, #form-update-profile textarea {
   margin: 10px;
   padding: 10px 10px;
   border-radius: 5px;
   font-size: 16px;
-}
-
-footer {
-  margin: 20px 100px;
-  border-top: 1px solid #eee;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:  center;
-  color: #666;
-}
-
-#footer-links a {
-  margin: auto 10px;
 }
 
 @media screen and (max-width: 414px) {
@@ -260,10 +245,6 @@ footer {
     width: 100%;
   }
 
-  footer {
-    margin: 20px 0;
-  }
-
   #form-update-profile input {
     padding: 20px 15px;
   }
@@ -282,5 +263,15 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 5px;
     padding: 10px;
+  }
+
+  .product {
+    border-top: none;
+    box-shadow: 0 0 1px 1px #eee;
+    margin-bottom: 10px;
+  }
+
+  .product-template {
+    margin-bottom: 10px;
   }
 }

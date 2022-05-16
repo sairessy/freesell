@@ -28,6 +28,12 @@ input[type="submit"] {
   color: #fff;
 }
 
+#product-promotional {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
 @media screen and (max-width: 414px) {
   #form-add-product {
     width: 100%;

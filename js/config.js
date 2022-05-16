@@ -1,4 +1,6 @@
 ﻿const config = {
+  // title: "Market$pace",
+  // title: "free$ell",
   title: "Open$tore",
   version: "1.0.0",
   //  server: "https://controller-backend.herokuapp.com",
@@ -21,10 +23,10 @@
     {id: 8, label: "Construção"},
     {id: 9, label: "Serviços"},
   ], locations: [
-    {id: 0, label: "Maputo"},
-    {id: 1, label: "Matola"},
-    {id: 2, label: "Baixa"},
-    {id: 3, label: "Museu"},
+    {id: 0, label: "Matola"},
+    {id: 1, label: "Baixa"},
+    {id: 2, label: "Museu"},
+    {id: 3, label: "Maxava"},
     {id: 4, label: "Malhangalene"},
   ],
   companyType: [

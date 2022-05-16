@@ -300,22 +300,6 @@ aside h1 {
   margin: 10px;
 }
 
-/* footer */
-footer {
-  margin: 20px 100px;
-  border-top: 1px solid #eee;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:  center;
-  color: #666;
-}
-
-#footer-links a {
-  margin: auto 10px;
-}
-
 #input-search-mobile {
   display: none;
 }
@@ -425,10 +409,6 @@ footer {
     height: 200px;
   }
 
-  footer {
-    margin: 20px 0;
-  }
-
   #banner {
     height: 100px;
     width: 100%;
@@ -450,5 +430,11 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 5px;
     padding: 10px;
+  }
+
+  .product {
+    box-shadow: 0 0 1px 1px #eee;
+    border-top: none;
+    margin-bottom: 10px;
   }
 }

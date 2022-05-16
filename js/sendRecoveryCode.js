@@ -1,5 +1,5 @@
 document.getElementById("a-recovery").addEventListener("click", async () => {
-  const email = prompt("Introduza o email")
+  const email = prompt("INTRODUZA O EMAIL:")
   
   if(email === null) {
     return
