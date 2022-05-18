@@ -16,7 +16,7 @@
 /* --primary-color: #3f3f5a; */
 
 :root {
-  --body-color: #f9f9f9; 
+  --body-color: #ccc; 
   --primary-color: #10076a;
 }
 
@@ -57,7 +57,7 @@ a {
 
 /* footer */
 footer {
-  border-top: 1px solid #eee;
+  border-top: 1px solid #aaa;
   margin: 20px 100px;
   padding: 10px 5px;
   height: 200px;
@@ -75,9 +75,8 @@ footer form {
 footer form input, footer form textarea {
   padding: 5px;
   margin-bottom: 12px;
-  border-radius: 2px;
-  /* background-color: rgba(255, 255, 255, 0.287) !important; */
-  border: 1px solid #f2f2f2;
+  border-radius: 5px;
+  background-color: #ddd !important; 
   font-size: 14px;
 }
 

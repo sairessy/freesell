@@ -354,6 +354,7 @@ aside h1 {
 }
 
 @media screen and (max-width: 414px) {
+body {background: #ccc}
   aside {
     display: none;
   }
@@ -389,6 +390,7 @@ aside h1 {
 
   #btn-more {
     width: calc(100% - 50px);
+    box-shanow: none;
   }
 
   #input-search-mobile {
@@ -432,8 +434,7 @@ aside h1 {
     padding: 10px;
   }
 
-  .product {
-    box-shadow: 0 0 1px 1px #eee;
+  .product { 
     border-top: none;
     margin-bottom: 10px;
   }

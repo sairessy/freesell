@@ -10,6 +10,8 @@
   color: #aaa;
 }
 
+body {background: #ccc}
+
 header {
   height: 35px;
   border-top: 5px solid var(--primary-color);
@@ -298,8 +300,7 @@ aside h1 {
   margin: 20px auto;
   width: 420px;
   padding: 20px;
-  background-color: #eee;
-  box-shadow: 0 0 10px 4px #f9f9f9;
+  background-color: #eee; 
   border-radius: 25px;
   cursor: pointer;
   color: #666;
@@ -424,6 +425,7 @@ aside h1 {
 }
 
 @media screen and (max-width: 414px) {
+  body {background: #ccc}
   aside {
     display: none;
   }
@@ -459,7 +461,7 @@ aside h1 {
   }
 
   #btn-more {
-    width: calc(100% - 50px);
+    width: calc(100% - 50px); 
   }
 
   #form-search-mobile {
@@ -479,7 +481,6 @@ aside h1 {
   }
 
   .product {
-    box-shadow: 0 0 1px 1px #eee;
     border-top: none;
     margin-bottom: 10px;
   }

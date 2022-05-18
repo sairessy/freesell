@@ -9,7 +9,7 @@
   //  server: "http://192.168.43.5:3000",
   colors: {
     primary: "#10076a",
-    bodyColor: "#fff"
+    bodyColor: "#ccc"
   },
   categories: [
     {id: 0, label: "Computadores e Informática"},
