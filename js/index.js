@@ -64,6 +64,8 @@ async function getProducts() {
   } else {
     document.getElementById("btn-more").style.display = "none"
   }
+
+  document.getElementById("loader").style.display = "none"
 }
 
 let categories = `<a href="#" id="">Todas</a>`
