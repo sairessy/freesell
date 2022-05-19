@@ -52,7 +52,6 @@ header #title {
   margin-left: 20px;
   padding: 10px 10px 10px 10px;
   padding: 20px;
-  background: url(../assets/img/plus-solid.svg) no-repeat center center/20px;
   background-color: #fff;
   border-radius: 2px;
   cursor: pointer;
@@ -61,6 +60,10 @@ header #title {
   display: inline-block;
   border: 1px solid var(--primary-color);
   color: var(--primary-color) !important;
+}
+
+#btn-add i {
+  color: var(--primary-color);
 }
 
 
@@ -228,12 +231,18 @@ aside h1 {
   header {
     border-top: none;
   }
+  
+  #header-r nav a {
+    color: #fff;
+  }
 
   #btn-add {
     width: 30px;
     height: 20px;
     padding: 5px;
     background-position: center;
+    border: 1px solid #fff;
+    background-color: var(--primary-color);
   }
 
   aside h1 {
@@ -243,6 +252,19 @@ aside h1 {
 
   aside {
     width: 100%;
+  }
+
+  header {
+    border-top: none;
+    background-color: #10076a;
+  }
+
+  header #title {
+    color: #fff;
+  }
+
+  #btn-add i {
+    color: #fff;
   }
 
   #form-update-profile input {

@@ -15,7 +15,7 @@ input:-webkit-autofill {
 }
 
 @font-face {
-  src: url(../assets/fonts/Macondo-Regular.ttf);
+  src: url(../assets/fonts/Skranji-Regular.ttf);
   font-family: tt;
 }
 
@@ -113,6 +113,10 @@ footer .left p span {
 
 
 @media screen and (max-width: 414px) {
+
+  header {
+    background-color: #10076a;
+  }
 
   footer {
     height: auto;

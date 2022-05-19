@@ -10,7 +10,10 @@
   color: #aaa;
 }
 
-body {background: #ccc}
+body {
+  background: #ccc;
+  overflow-y: hidden;
+}
 
 header {
   height: 35px;
@@ -29,8 +32,6 @@ header {
 
 header #title {
   color: var(--primary-color);
-  font-weight: 900;
-  font-family: tt;
 }
 
 #header-l {
@@ -439,14 +440,15 @@ aside h1 {
 }
 
 #loader i {
-  font-size: 54px;
+  font-size: 32px;
   color: #666;
 }
 
 #loader p {
-  font-size: 24px;
+  font-size: 18px;
   color: #888;
   text-align: center;
+  font-family: rbt;
 }
 
 @media screen and (max-width: 414px) {
@@ -457,6 +459,11 @@ aside h1 {
 
   header {
     border-top: none;
+    background-color: #10076a;
+  }
+
+  header #title {
+    color: #fff;
   }
 
   #header-r {
@@ -467,7 +474,7 @@ aside h1 {
 
   #btn-menu {
     display: inline-block;
-    color: var(--primary-color);
+    color: #fff;
     margin-left: 10px;
   }
 
@@ -479,6 +486,9 @@ aside h1 {
     width: 90px;
     padding: 5px;
     height: 20px;
+    border: 1px solid #fff;
+    color: #fff !important;
+    background-color: var(--primary-color);
   } 
 
   #input-search {

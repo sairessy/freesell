@@ -66,6 +66,7 @@ async function getProducts() {
   }
 
   document.getElementById("loader").style.display = "none"
+  document.querySelector("body").style.overflowY = "scroll"
 }
 
 let categories = `<a href="#" id="">Todas</a>`

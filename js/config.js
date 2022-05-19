@@ -1,7 +1,7 @@
 ﻿const config = {
   // title: "Market$pace",
-  // title: "free$ell",
-  title: "Open$tore",
+  title: "free$ell",
+  title: "Openstore",
   version: "1.0.0",
   //  server: "https://controller-backend.herokuapp.com",
   server: "https://controller-backend.glitch.me",

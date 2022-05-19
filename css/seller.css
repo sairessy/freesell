@@ -361,6 +361,11 @@ body {background: #ccc}
 
   header {
     border-top: none;
+    background-color: #10076a;
+  }
+
+  header #title {
+    color: #fff;
   }
 
   #header-r {
@@ -382,6 +387,9 @@ body {background: #ccc}
     width: 90px;
     padding: 5px;
     height: 20px;
+    color: #fff !important;
+    background-color: var(--primary-color);
+    border: 1px solid #fff;
   } 
 
   #input-search {
