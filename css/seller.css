@@ -398,7 +398,7 @@ body {background: #ccc}
 
   #btn-more {
     width: calc(100% - 50px);
-    box-shanow: none;
+    box-shadow: none;
   }
 
   #input-search-mobile {

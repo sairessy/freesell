@@ -51,13 +51,16 @@ header #title {
 #btn-add {
   margin-left: 20px;
   padding: 10px 10px 10px 10px;
-  padding: 20px;
+  padding: 5px;
+  height: 25px;
   background-color: #fff;
   border-radius: 2px;
   cursor: pointer;
   text-align: center;
   width: 170px;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--primary-color);
   color: var(--primary-color) !important;
 }
