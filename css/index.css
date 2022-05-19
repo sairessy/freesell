@@ -440,15 +440,25 @@ aside h1 {
 }
 
 #loader i {
+<<<<<<< HEAD
   font-size: 32px;
+=======
+  font-size: 54px;
+>>>>>>> 7edf22d1bf7b9acf72ef587f9b45ef36c0fa42fc
   color: #666;
 }
 
 #loader p {
+<<<<<<< HEAD
   font-size: 18px;
   color: #888;
   text-align: center;
   font-family: rbt;
+=======
+  font-size: 24px;
+  color: #888;
+  text-align: center;
+>>>>>>> 7edf22d1bf7b9acf72ef587f9b45ef36c0fa42fc
 }
 
 @media screen and (max-width: 414px) {
