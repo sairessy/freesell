@@ -4,12 +4,12 @@
   title: "Openstore",
   version: "1.0.0",
   //  server: "https://controller-backend.herokuapp.com",
-  server: "https://controller-backend.glitch.me",
-  //  server: "http://localhost:3000",
+   server: "https://controller-backend.glitch.me",
+  // server: "http://localhost:3000",
   //  server: "http://192.168.43.5:3000",
   colors: {
     primary: "#10076a",
-    bodyColor: "#ccc"
+    bodyColor: "#f9f9f9"
   },
   categories: [
     {id: 0, label: "Computadores e Informática"},
@@ -23,16 +23,22 @@
     {id: 8, label: "Construção"},
     {id: 9, label: "Serviços"},
   ], locations: [
+    {id: "", label: "Local indefinido"},
     {id: 0, label: "Matola"},
     {id: 1, label: "Baixa"},
     {id: 2, label: "Museu"},
     {id: 3, label: "Maxava"},
     {id: 4, label: "Malhangalene"},
+    {id: 5, label: "Alto Maé"},
   ],
   companyType: [
+    {id: "", label: "Tipo de estabelecimento"},
     {id: 0, label: "Loja"},
     {id: 1, label: "Farmácia"},
-    {id: 2, label: "Ferragem"}
+    {id: 2, label: "Ferragem"},
+    {id: 3, label: "Livraria"},
+    {id: 4, label: "Mercearia"},
+    {id: 5, label: "Pastelaria"}
   ],
   quantities: [
     {id: 0, label: "Stock"},

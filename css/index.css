@@ -11,7 +11,6 @@
 }
 
 body {
-  background: #ccc;
   overflow-y: hidden;
 }
 
@@ -115,10 +114,10 @@ section {
   right: 0;
   margin: auto;
   height: 50px;
-  /* background-color: #ddd; */
   display: flex;
   justify-content: space-around;
   align-items: center;
+  display: none;
 }
 
 #stores .store {
@@ -214,7 +213,7 @@ aside h1 {
   background-color: #fff;
   position: relative;
   border: 1px solid #f9f9f9;
-  border-top: 3px solid #eee;
+  /* border-top: 3px solid #eee; */
 }
 
 .product-template {
@@ -317,6 +316,7 @@ aside h1 {
   display: none;
   margin-right: 50px;
   position: absolute;
+  color: #ddd;
   left: 50px;
 }
 
@@ -408,7 +408,7 @@ aside h1 {
 #slider {
   position: absolute;
   width: 80%;
-  left: -80%;
+  right: -80%;
   background-color: #fff;
   height: 100%;
   overflow-y: scroll;
@@ -418,11 +418,12 @@ aside h1 {
 #select-category-slider {
   display: block;
   width: calc(100% - 10px);
-  margin: auto;
+  margin: 5px;
+  border-radius: 2px;
   padding: 15px;
   font-size: 18px;
   color: #666;
-  background-color: #fff;
+  background-color: #eee;
 }
 
 /* loader */
@@ -452,7 +453,6 @@ aside h1 {
 }
 
 @media screen and (max-width: 414px) {
-  body {background: #ccc}
   aside {
     display: none;
   }
@@ -475,7 +475,7 @@ aside h1 {
   #btn-menu {
     display: inline-block;
     color: #fff;
-    margin-left: 10px;
+    margin: auto 10px auto 5px;
   }
 
   #btn-menu:active {
@@ -516,7 +516,6 @@ aside h1 {
   }
 
   .product {
-    border-top: none;
     margin-bottom: 10px;
   }
 
@@ -544,9 +543,15 @@ aside h1 {
 
   #products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 5px;
-    padding: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 0px;
+    padding: 0;
+    padding-top: 5px;
+  }
+
+  .product {
+    border-top: none;
+    margin: 5px;
   }
 
   .product-template {

@@ -145,7 +145,7 @@ aside h1 {
   background-color: #fff;
   position: relative;
   border: 1px solid #f9f9f9;
-  border-top: 3px solid #eee;
+  /* border-top: 3px solid #eee; */
 }
 
 .product-template {
@@ -354,7 +354,6 @@ aside h1 {
 }
 
 @media screen and (max-width: 414px) {
-body {background: #ccc}
   aside {
     display: none;
   }
@@ -437,13 +436,14 @@ body {background: #ccc}
 
   #products {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 5px;
-    padding: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 0px;
+    padding: 0;
+    padding-top: 5px;
   }
 
-  .product { 
+  .product {
     border-top: none;
-    margin-bottom: 10px;
+    margin: 5px;
   }
 }

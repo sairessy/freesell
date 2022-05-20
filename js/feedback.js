@@ -3,7 +3,6 @@ document.getElementById("form-feedback").addEventListener("submit", async e => {
   const feedback = document.getElementById("textarea-feedback").value
   const email = document.getElementById("input-feedback-email").value
 
-  console.log(feedback, email)
   const res = await fetch(config.server + "/freesell/api/feedback", {
     method: "POST",
     headers: {

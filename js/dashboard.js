@@ -45,7 +45,7 @@ document.getElementById("form-update-profile").addEventListener("submit", async 
   const location = document.getElementById("select-location").value
   const companyType = document.getElementById("select-company-type").value
 
-  const data = {email, companyName, contact, user}
+  const data = {email, companyName, companyType, contact, location, user}
 
   const res = await fetch(config.server + "/freesell/api/updateuserprofile", {
     method: "POST",
@@ -70,9 +70,26 @@ async function getUserInfo() {
     body: JSON.stringify({user})
   })
 
+  
   const json = await res.json()
+  document.getElementById("select-company-type").value = json.companyType
+  document.getElementById("select-location").value = json.location == undefined ? "" : json.location
 
   document.getElementById("input-email").value = json.email
   document.getElementById("input-company-name").value = json.companyName == undefined ? "" : json.companyName
   document.getElementById("input-contact").value = json.contact == undefined ? "" : json.contact
 }
+
+// Select
+
+let lcs = ''
+config.locations.forEach(l => {
+  lcs += `<option value="${l.id}">${l.label}</option>`
+});
+document.getElementById("select-location").innerHTML = lcs
+
+let cTypes = ''
+config.companyType.forEach(ct => {
+  cTypes += `<option value="${ct.id}">${ct.label}</option>`
+});
+document.getElementById("select-company-type").innerHTML = cTypes

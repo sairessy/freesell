@@ -9,6 +9,10 @@ if(user != undefined && user != null) {
   document.getElementById("a-sell").href = "dashboard.html"
 }
 
+setTimeout(() => {
+  document.querySelector("body").scroll
+}, 3000);
+
 getProducts()
 getSellers()
 
@@ -18,12 +22,22 @@ async function getSellers() {
   let sellers = ""
 
   json.forEach(s => {
-    sellers += `<option value="${s.companyName}"></option>`
+
+    // ${
+    //   s.companyType == "" ? "" : 
+    //   config.companyType.filter(ct => ct.id == s.companyType)[0].label +
+    //   " (" + config.locations.filter(l => l.id == s.location)[0].label + ")"
+    // }
+    sellers += 
+    `
+      <option value="${s.companyName}">
+     
+      </option>
+    `
   })
 
   document.getElementById("datalist-sellers").innerHTML = sellers
 }
-
 
 document.getElementById("input-search-seller").addEventListener("change", async e => {
   const res = await fetch(config.server + "/freesell/api/user/" + e.target.value)
@@ -197,7 +211,7 @@ document.querySelector(".product-details-popup-container").addEventListener("cli
 // Slider
 document.getElementById("slider-container").addEventListener("click", e => {
   if(e.target.id == "slider-container") {
-    $("#slider").animate({left: "-80%"}, () => {
+    $("#slider").animate({right: "-80%"}, () => {
       $("#slider-container").fadeOut()
     })
     $("body").css("overflow-y", "scroll")
@@ -206,7 +220,7 @@ document.getElementById("slider-container").addEventListener("click", e => {
 
 $("#btn-menu").click(() => {
   $("#slider-container").fadeIn(() => {
-    $("#slider").animate({left: "0"})
+    $("#slider").animate({right: "0"})
   })
 
   $("body").css("overflow-y", "hidden")
