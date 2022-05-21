@@ -1,6 +1,6 @@
 let category = ""
-let limit = 4
-const limitPlus = 4
+let limit = 12
+const limitPlus = 12
 let limitReached = false
 
 const user = document.cookie.split("=")[1]

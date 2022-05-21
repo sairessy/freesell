@@ -144,8 +144,7 @@ aside h1 {
   border-radius: 5px;
   background-color: #fff;
   position: relative;
-  border: 1px solid #f9f9f9;
-  /* border-top: 3px solid #eee; */
+  border: 1px solid #eee;
 }
 
 .product-template {
@@ -201,6 +200,7 @@ aside h1 {
 
 .product-price {
   color: #2bccb1;
+  font-family: rbtr;
 }
 
 .product-locatiton {
@@ -354,17 +354,17 @@ aside h1 {
 }
 
 @media screen and (max-width: 414px) {
+  header {
+    border-top: none;
+    height: 40px;
+  }
+
   aside {
     display: none;
   }
 
   header {
     border-top: none;
-    background-color: #10076a;
-  }
-
-  header #title {
-    color: #fff;
   }
 
   #header-r {
@@ -386,9 +386,6 @@ aside h1 {
     width: 90px;
     padding: 5px;
     height: 20px;
-    color: #fff !important;
-    background-color: var(--primary-color);
-    border: 1px solid #fff;
   } 
 
   #input-search {

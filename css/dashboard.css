@@ -45,7 +45,7 @@ header #title {
 #header-r nav a {
   margin-right: 10px;
   text-transform: uppercase;
-  color: #10076a;
+  color: var(--primary-color);
 }
 
 #btn-add {
@@ -104,10 +104,9 @@ aside h1 {
 .product {
   height: 310px;
   border-radius: 5px;
-  border: 1px solid #f9f9f9;
+  border: 1px solid #eee;
   background-color: #fff;
   position: relative;
-  /* border-top: 3px solid #eee; */
 }
 
 .product-template {
@@ -144,6 +143,7 @@ aside h1 {
   top: 0px;
   left: 10px;
   color: #2bccb1;
+  font-family: rbtr;
 }
 
 .product-locatiton {
@@ -168,7 +168,7 @@ aside h1 {
 }
 
 .product-more-details span i {
-  color: #10076a;
+  color: var(--primary-color);
 }
 
 .product-controlls {
@@ -227,6 +227,11 @@ aside h1 {
 }
 
 @media screen and (max-width: 414px) {
+  header {
+    border-top: none;
+    height: 40px;
+  }
+
   main {
     flex-direction: column;
   }
@@ -234,18 +239,12 @@ aside h1 {
   header {
     border-top: none;
   }
-  
-  #header-r nav a {
-    color: #fff;
-  }
 
   #btn-add {
     width: 30px;
     height: 20px;
     padding: 5px;
     background-position: center;
-    border: 1px solid #fff;
-    background-color: var(--primary-color);
   }
 
   aside h1 {
@@ -257,21 +256,8 @@ aside h1 {
     width: 100%;
   }
 
-  header {
-    border-top: none;
-    background-color: #10076a;
-  }
-
-  header #title {
-    color: #fff;
-  }
-
-  #btn-add i {
-    color: #fff;
-  }
-
   #form-update-profile input, #form-update-profile select, #form-update-profile textarea {
-    margin: 10px;
+    margin: 5px;
     padding: 20px 15px;
     border-radius: 5px;
     font-size: 16px;

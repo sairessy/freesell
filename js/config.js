@@ -4,11 +4,12 @@
   title: "Openstore",
   version: "1.0.0",
   //  server: "https://controller-backend.herokuapp.com",
-   server: "https://controller-backend.glitch.me",
-  // server: "http://localhost:3000",
+  server: "https://controller-backend.glitch.me",
+  //  server: "http://localhost:3000",
   //  server: "http://192.168.43.5:3000",
   colors: {
-    primary: "#10076a",
+    // primary: "#10076a",
+    primary: "#d00a7e",
     bodyColor: "#f9f9f9"
   },
   categories: [
