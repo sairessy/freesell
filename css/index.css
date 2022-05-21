@@ -16,7 +16,6 @@ body {
 
 header {
   height: 35px;
-  border-top: 5px solid var(--primary-color);
   border-bottom: 1px solid #ddd;
   box-shadow: 2px 0 6px #ddd;
   padding: 15px;
@@ -472,7 +471,7 @@ aside h1 {
 
   #btn-menu {
     display: inline-block;
-    color: var(--primary-color);
+    color: #666;
     margin: auto 10px auto 5px;
   }
 
