@@ -32,9 +32,10 @@ async function getProducts() {
 
   for (let i = 0; i < products.length; i++) {
     const product = products[i];
+    const userChecked = true
     const image = product.image != null ? product.image.data : null
-        const {_id, title, price, category, location, description, contact, date, user, companyName} = product
-        auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName, image)
+    const {_id, title, price, category, location, description, contact, date, user, companyName} = product
+    auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName, image, userChecked)
   }
 
   limit += limitPlus

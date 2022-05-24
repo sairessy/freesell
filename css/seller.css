@@ -170,6 +170,11 @@ aside h1 {
   margin: auto;
 }
 
+.product-owner i {
+  margin-left: 10px;
+  color: #0000ff;
+}
+
 .product-cover {
   height: 130px;
   background: url(../assets/img/image.svg) no-repeat center center/contain;

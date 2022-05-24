@@ -2,6 +2,7 @@ let category = ""
 let limit = 12
 const limitPlus = 12
 let limitReached = false
+let scrolled = false
 
 const user = document.cookie.split("=")[1]
 
@@ -61,9 +62,10 @@ async function getProducts() {
 
   for (let i = 0; i < products.length; i++) {
     const product = products[i];
+    const userChecked = true
     const image = product.image != null ? product.image.data : null
     const {_id, title, price, category, location, description, contact, date, user, companyName} = product
-    auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName, image)
+    auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName, image, userChecked)
   }
 
   limit += limitPlus
@@ -81,6 +83,10 @@ async function getProducts() {
 
   document.getElementById("loader").style.display = "none"
   document.querySelector("body").style.overflowY = "scroll"
+  if(!scrolled) {
+      $('body, html').animate({scrollTop: 0});
+      scrolled = true;
+  }
 }
 
 let categories = `<a href="#" id="">Todas</a>`
@@ -134,9 +140,10 @@ document.getElementById("input-search").addEventListener("keyup", async e => {
   
       for (let i = 0; i < products.length; i++) {
         const product = products[i];
+        const userChecked = true
         const image = product.image != null ? product.image.data : null
         const {_id, title, price, category, location, description, contact, date, user, companyName} = product
-        auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName, image)
+        auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName, image, userChecked)
       }
     
       document.getElementById("products").innerHTML = auxProducts
@@ -173,9 +180,10 @@ document.getElementById("input-search-mobile").addEventListener("keyup", async e
   
       for (let i = 0; i < products.length; i++) {
         const product = products[i];
+        const userChecked = true
         const image = product.image != null ? product.image.data : null
         const {_id, title, price, category, location, description, contact, date, user, companyName} = product
-        auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName, image)
+        auxProducts += Product(_id, title, price, category, location, description, contact, date, user, companyName, image, userChecked)
       }
     
       document.getElementById("products").innerHTML = auxProducts

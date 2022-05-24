@@ -6,7 +6,7 @@ const showMoreInfo = (title, price, location, description, contact) => {
   document.querySelector(".product-details-popup-contact").innerText = "Contacto: " + contact
 }
 
-const Product = (id, title, price, category, location, description, contact, date, user, companyName, image) => {
+const Product = (id, title, price, category, location, description, contact, date, user, companyName, image, userChecked) => {
   const locationLabel = config.locations.filter(l => l.id == location)[0].label
   const d = new Date(parseInt(date))
   const img = image == null ? "assets/img/image.svg" : image
@@ -16,6 +16,7 @@ const Product = (id, title, price, category, location, description, contact, dat
   } else {
     cName = companyName
   }
+
   return(`
     <div class="product">
       <div class="product-cover" style="background-image: url(${img});">
@@ -25,7 +26,11 @@ const Product = (id, title, price, category, location, description, contact, dat
         <div>
           <p class="product-title">${title}</p>
           <p class="product-price">$ ${price}</p>
-          ${companyName != "" ? `<a href="seller.html?s=${user}" style="font-family: tt;" class="product-owner" id="${user}">${cName}</a>` : ""}
+          ${companyName != "" ? 
+          `<a href="seller.html?s=${user}" style="font-family: tt;" class="product-owner" id="${user}">
+            ${cName}<i style="display: ${userChecked ? "inline-block" : "none"}" class="la la-check-circle"></i>
+          </a>` : ""
+          }
           <p class="product-locatiton">${locationLabel}</p>
           <p class="product-date">${d.toLocaleString("pt-Br")}</p>
         </div>
