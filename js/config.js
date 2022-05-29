@@ -33,13 +33,11 @@
     {id: 5, label: "Alto Maé"},
   ],
   companyType: [
-    {id: "", label: "Tipo de estabelecimento"},
     {id: 0, label: "Loja"},
     {id: 1, label: "Farmácia"},
     {id: 2, label: "Ferragem"},
     {id: 3, label: "Livraria"},
     {id: 4, label: "Mercearia"},
-    {id: 5, label: "Pastelaria"}
   ],
   quantities: [
     {id: 0, label: "Stock"},

@@ -238,7 +238,17 @@ let cs = `<option value="">Todas categorias</option>`
 config.categories.forEach(c => {
   cs += `<option value="${c.id}">${c.label}</option>`
 });
+
 document.getElementById("select-category-slider").innerHTML = cs
+
+// Company types
+let cts = `<option value="">Todas categorias</option>`
+config.companyType.forEach(c => {
+  cts += `<option value="${c.id}">${c.label}</option>`
+});
+
+document.getElementById("select-company-type").innerHTML = cts
+
 
 document.getElementById("select-category-slider").addEventListener("change", e => {
   category = e.target.value

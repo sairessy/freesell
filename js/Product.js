@@ -9,7 +9,7 @@ const showMoreInfo = (title, price, location, description, contact) => {
 const Product = (id, title, price, category, location, description, contact, date, user, companyName, image, userChecked) => {
   const locationLabel = config.locations.filter(l => l.id == location)[0].label
   const d = new Date(parseInt(date))
-  const img = image == null ? "assets/img/image.svg" : image
+  const img = image == null ? "assets/img/img.svg" : image
   let cName = ""
   if(companyName.length > 20) {
     cName = companyName.substr(0, 20) + "..."

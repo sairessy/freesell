@@ -56,7 +56,7 @@ header #title {
 #input-search, #input-search-seller  {
   margin-left: 20px;
   padding: 10px 10px 10px 40px;
-  width: 270px;
+  width: 200px;
   background: url(../assets/img/search-dark.svg) no-repeat 10px center/20px;
   background-color: #f9f9f9;
   color: #666;
@@ -66,10 +66,28 @@ header #title {
   border-radius: 5px;
 }
 
+#find-seller {
+  display: flex;
+  margin: auto 10px;
+}
+
+#find-seller select {
+  background-color: #f1f1f1;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  font-size: 14px;
+  color: #666;
+  width: 160px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 #input-search-seller {
-  width: 240px;
   background: url(../assets/img/store-alt-solid.svg) no-repeat 10px center/20px;
   background-color: #f9f9f9;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin: 0;
   /* display: none; */
 }
 
@@ -167,10 +185,19 @@ aside {
   width: 300px;
 }
 
-aside video {
-  display: block;
-  margin: 20px auto;
-  display: none;
+#add-ad {
+  margin: 20px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  color: #888;
+}
+
+#add-ad span {
+  text-transform: uppercase;
 }
 
 aside h1 {
@@ -536,7 +563,7 @@ aside h1 {
     font-size: 24px;
   }
 
-  #input-search-seller {
+  #find-seller {
     display: none;
   }
 

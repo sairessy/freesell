@@ -9,7 +9,7 @@ const remove = async (p) => {
 }
 
 const ProductPrivate = (id, title, price, category, location, image) => {
-  const img = image == null ? "assets/img/image.svg" : image
+  const img = image == null ? "assets/img/img.svg" : image
 
   return(`
     <div class="product">

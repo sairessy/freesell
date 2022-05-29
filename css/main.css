@@ -36,9 +36,15 @@ body {
   background-color: var(--body-color);
 }
 
+header > div {
+  display: flex;
+  align-items: center;
+}
+
 #title {
   font-family: tt;
-  font-size: 28px;
+  font-size: 30px;
+  margin-bottom: 30px;
 }
 
 button, input, select, textarea {

@@ -14,4 +14,7 @@ document.getElementById("form-feedback").addEventListener("submit", async e => {
   const json = await res.json()
   
   alert("Obrigado pelo seu feedback!")
+  
+  document.getElementById("textarea-feedback").value = ""
+  document.getElementById("input-feedback-email").value = ""
 })
