@@ -51,7 +51,7 @@ button, input, select, textarea {
   outline: none;
   border: none;
   font-size: 16px;
-  accent-color: var(--primary-color);
+  /* accent-color: var(--primary-color); */
 }
 
 input[type="submit"] {
@@ -70,36 +70,56 @@ a {
 
 /* footer */
 footer {
-  border-top: 1px solid #aaa;
-  margin: 20px 100px;
+  /* border-top: 1px solid #ccc; */
+  /* margin: 20px 100px; */
+  margin: 20px auto 0 auto;
   padding: 10px 5px;
   height: 200px;
   display: flex;
   align-items:  center;
   justify-content: space-around;
   color: #666;
+  background: url(../assets/img/always-grey.png);
+  background-color: #222;
 }
 
 footer form {
   display: flex;
   flex-direction: column;
+  border: 1px solid #333;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #222;
+  position: relative;
+}
+
+footer form p {
+  position: absolute;
+  top: -8px;
+  font-size: 12px;
+  padding: 0 10px;
+  left: 0;
+  right: 0;
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  background-color: #222;
 }
 
 footer form input, footer form textarea {
   padding: 5px;
   margin-bottom: 5px;
-  border-radius: 5px;
-  background-color: #fcfcfc !important; 
+  border-radius: 2px;
   font-size: 14px;
 }
 
 footer form input[type="email"], footer form textarea {
-  background-color: #eee !important;
-  color: #222;
+  background-color: #444 !important;
+  color: #aaa;
 }
 
 footer form input[type="submit"] {
-  background-color: #ddd !important;
+  background-color: #333 !important;
   color: #666;
 }
 

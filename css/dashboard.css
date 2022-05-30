@@ -25,8 +25,10 @@ header #title {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  position: relative;
 }
 
 #banner h1 {
@@ -34,6 +36,22 @@ header #title {
   font-size: 48px;
   text-align: center;
   font-family: tt;
+}
+
+#banner a {
+  margin-bottom: 50px;
+  padding: 5px 20px;
+  border-radius: 2px;
+  background-color: #d00a7e1e;
+}
+
+#banner #qr {
+  background-color: #d00a7e1e;
+  position: absolute;
+  border-radius: 2px;
+  margin: 5px;
+  top: 0;
+  left: 0;
 }
 
 #header-l {
@@ -269,6 +287,12 @@ aside h1 {
 
   #banner h1 {
     font-size: 24px;
+  }
+
+  #banner #qr {
+    width: 35px;
+    height: 35px;
+    margin: 3px;
   }
 
   #products {

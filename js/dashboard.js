@@ -4,6 +4,9 @@ if(user == undefined || user == null) {
   window.location.href = "login.html"
 }
 
+document.getElementById("a-link").innerText = "Link do estabelecimento"
+document.getElementById("a-link").href = config.serverHost + "/seller.html?s=" + user
+
 getProducts()
 
 async function getProducts() {

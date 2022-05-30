@@ -3,10 +3,12 @@
   // title: "free$ell",
   title: "Openstore",
   version: "1.0.0",
+  // server: "http://localhost:3000",
+  //  server: "http://192.168.137.1:3000",
+  // serverHost: "http://localhost:5000/freesell",
   //  server: "https://controller-backend.herokuapp.com",
   server: "https://controller-backend.glitch.me",
-  // server: "http://localhost:3000",
-  //  server: "http://192.168.43.5:3000",
+  serverHost: "https://openstore.gq",
   colors: {
     // primary: "#10076a",
     primary: "#d00a7e",
@@ -38,6 +40,7 @@
     {id: 2, label: "Ferragem"},
     {id: 3, label: "Livraria"},
     {id: 4, label: "Mercearia"},
+    {id: 5, label: "Talho"}
   ],
   quantities: [
     {id: 0, label: "Stock"},

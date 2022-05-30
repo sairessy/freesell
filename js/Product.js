@@ -25,7 +25,7 @@ const Product = (id, title, price, category, location, description, contact, dat
       <div class="product-details">
         <div>
           <p class="product-title">${title}</p>
-          <p class="product-price">$ ${price}</p>
+          <p class="product-price">${price} MT</p>
           ${companyName != "" ? 
           `<a href="seller.html?s=${user}" style="font-family: tt;" class="product-owner" id="${user}">
             ${cName}<i style="display: ${userChecked ? "inline-block" : "none"}" class="la la-check-circle"></i>

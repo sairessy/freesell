@@ -46,11 +46,16 @@ header #title {
   background-color: #fff;
   padding: 10px;
   width: 170px;
-  display: inline-block;
-  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 2px;
   border: 1px solid var(--primary-color);
   color: var(--primary-color) !important;
+}
+
+#a-sell i {
+  margin-right: 10px;
 }
 
 #input-search, #input-search-seller  {
@@ -115,14 +120,15 @@ section {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   position: relative;
-  display: none;
+  /* display: none; */
 }
 
 #banner h1 {
-  font-size: 48px;
-  color: #aaa;
+  font-size: 32px;
+  color: #ccc;
   text-align: center;
   font-family: tt;
+  font-family: rbt;
 }
 
 #stores {
@@ -135,7 +141,7 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  display: none;
+  /* display: none; */
 }
 
 #stores .store {
@@ -151,12 +157,14 @@ section {
 }
 
 /*  */
-.store:nth-child(1) {
+#stores .store:nth-child(1) {
+  opacity: .5;
   background-color: #ddd;
   border-radius: 100%;
 }
 
-.store:last-child {
+#stores .store:last-child {
+  opacity: .5;
   background-color: #ddd;
   border-radius: 100%;
 }
@@ -257,7 +265,7 @@ aside h1 {
 }
 
 .product-owner {
-  font-size: 14px;
+  font-size: 12px;
   padding: 5px 0;
   border-radius: 2px;
   color: var(--primary-color);
@@ -515,7 +523,7 @@ aside h1 {
     width: 90px;
     padding: 5px;
     height: 20px;
-  } 
+  }
 
   #input-search {
     display: none;
