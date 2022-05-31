@@ -219,7 +219,7 @@ document.querySelector(".product-details-popup-container").addEventListener("cli
 // Slider
 document.getElementById("slider-container").addEventListener("click", e => {
   if(e.target.id == "slider-container") {
-    $("#slider").animate({right: "-80%"}, () => {
+    $("#slider").animate({left: "-80%"}, () => {
       $("#slider-container").fadeOut()
     })
     $("body").css("overflow-y", "scroll")
@@ -228,7 +228,7 @@ document.getElementById("slider-container").addEventListener("click", e => {
 
 $("#btn-menu").click(() => {
   $("#slider-container").fadeIn(() => {
-    $("#slider").animate({right: "0"})
+    $("#slider").animate({left: "0"})
   })
 
   $("body").css("overflow-y", "hidden")

@@ -110,9 +110,9 @@ section {
 }
 
 #banner {
-  background: url(../assets/img/subtle-prism.svg);
+  background: url(../assets/img/always-grey.png);
   background-color: #f1f1f1;
-  height: 150px;
+  height: 130px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -120,6 +120,7 @@ section {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   position: relative;
+  flex-direction: column;
   /* display: none; */
 }
 
@@ -132,21 +133,18 @@ section {
 }
 
 #stores {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  height: 50px;
+  /* position: absolute; */
+  margin-top: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
   /* display: none; */
 }
 
 #stores .store {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background-color: #ddd;
   border-radius: 100%;
   display: flex;
@@ -244,11 +242,11 @@ aside h1 {
 }
 
 .product {
-  height: 350px;
   border-radius: 5px;
   background-color: #fff;
   position: relative;
   border: 1px solid #eee;
+  /* box-shadow: 0 0 2px 2px #f1f1f1; */
 }
 
 .product-template {
@@ -300,6 +298,7 @@ aside h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: url(../assets/img/always-grey.png);
 }
 
 .product-title {
@@ -449,7 +448,7 @@ aside h1 {
 #slider {
   position: absolute;
   width: 80%;
-  right: -80%;
+  left: -80%;
   background-color: #fff;
   height: 100%;
   overflow-y: scroll;

@@ -82,7 +82,7 @@ section {
 }
 
 #banner {
-  background: url(../assets/img/subtle-prism.svg);
+  background: url(../assets/img/always-grey.png);
   background-color: #f1f1f1;
   height: 150px;
   width: calc(100% - 10px);
@@ -145,7 +145,6 @@ aside h1 {
 }
 
 .product {
-  height: 350px;
   border-radius: 5px;
   background-color: #fff;
   position: relative;
@@ -201,6 +200,7 @@ aside h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: url(../assets/img/always-grey.png);
 }
 
 .product-title {

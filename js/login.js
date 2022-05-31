@@ -31,7 +31,7 @@ document.getElementById("form-login").addEventListener("submit", async e => {
       $(".error-msg span").fadeOut()
     }, 2000);
     document.getElementById("btn-submit-login").disabled = false
-    document.getElementById("btn-submit-login").style.backgroundColor = "#10076a"
+    document.getElementById("btn-submit-login").style.backgroundColor = config.colors.primary
   }
 })
 

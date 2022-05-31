@@ -13,7 +13,7 @@ document.getElementById("form-recovery-pass").addEventListener("submit", async e
   if(pass != newPass) {
     alert("As senhas não coincidem!")
     document.getElementById("btn-submit-recovery").disabled = false
-    document.getElementById("btn-submit-recovery").style.backgroundColor = "#10076a"
+    document.getElementById("btn-submit-recovery").style.backgroundColor = config.colors.primary
     return
   }
 
@@ -35,7 +35,7 @@ document.getElementById("form-recovery-pass").addEventListener("submit", async e
   }
 
   document.getElementById("btn-submit-recovery").disabled = false
-  document.getElementById("btn-submit-recovery").style.backgroundColor = "#10076a"
+  document.getElementById("btn-submit-recovery").style.backgroundColor = config.colors.primary
 
 })
 

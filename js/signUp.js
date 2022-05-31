@@ -16,7 +16,7 @@ document.getElementById("form-login").addEventListener("submit", async e => {
   if(pass != cPass) {
     alert("As senhas não coincidem!")
     document.getElementById("btn-submit-signup").disabled = false
-    document.getElementById("btn-submit-signup").style.backgroundColor = "#10076a"
+    document.getElementById("btn-submit-signup").style.backgroundColor = config.colors.primary
     return
   }
 
@@ -36,7 +36,7 @@ document.getElementById("form-login").addEventListener("submit", async e => {
       $(".error-msg span").fadeOut()
     }, 2000);
     document.getElementById("btn-submit-signup").disabled = false
-    document.getElementById("btn-submit-signup").style.backgroundColor = "#10076a"
+    document.getElementById("btn-submit-signup").style.backgroundColor = config.colors.primary
     return
   }
   

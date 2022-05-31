@@ -70,26 +70,22 @@ a {
 
 /* footer */
 footer {
-  /* border-top: 1px solid #ccc; */
-  /* margin: 20px 100px; */
-  margin: 20px auto 0 auto;
+  border-top: 1px solid #ccc;
+  margin: 20px 100px;
   padding: 10px 5px;
   height: 200px;
   display: flex;
   align-items:  center;
   justify-content: space-around;
   color: #666;
-  background: url(../assets/img/always-grey.png);
-  background-color: #222;
 }
 
 footer form {
   display: flex;
   flex-direction: column;
-  border: 1px solid #333;
+  border-top: 1px solid #333;
   padding: 10px;
-  border-radius: 5px;
-  background-color: #222;
+  background-color: var(--body-color);
   position: relative;
 }
 
@@ -103,7 +99,7 @@ footer form p {
   width: fit-content;
   margin: auto;
   text-align: center;
-  background-color: #222;
+  background-color: var(--body-color);
 }
 
 footer form input, footer form textarea {
@@ -114,12 +110,12 @@ footer form input, footer form textarea {
 }
 
 footer form input[type="email"], footer form textarea {
-  background-color: #444 !important;
-  color: #aaa;
+  background-color: #eee !important;
+  color: #666;
 }
 
 footer form input[type="submit"] {
-  background-color: #333 !important;
+  background-color: #ddd !important;
   color: #666;
 }
 
