@@ -126,6 +126,7 @@ aside h1 {
 }
 
 .product-template {
+  height: 320px;
   background-color: #fcfcfc;
   display: flex;
   justify-content: center;
@@ -282,7 +283,7 @@ aside h1 {
   }
 
   #banner {
-    height: 100px;
+    height: 120px;
     width: 100%;
   }
 

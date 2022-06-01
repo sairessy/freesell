@@ -3,7 +3,7 @@
   // title: "free$ell",
   title: "Openstore",
   version: "1.0.0",
-  server: "http://localhost:3000",
+  // server: "http://localhost:3000",
   //  server: "http://192.168.137.1:3000",
   // serverHost: "http://localhost:5000/freesell",
   //  server: "https://controller-backend.herokuapp.com",

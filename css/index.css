@@ -250,7 +250,8 @@ aside h1 {
 }
 
 .product-template {
-  background-color: #fcfcfc;
+  height: 320px;
+  background-color: #ddd;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,7 +259,7 @@ aside h1 {
 }
 
 .product-template i {
-  color: #ddd;
+  color: #888;
   font-size: 36px;
 }
 
@@ -477,7 +478,7 @@ aside h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.722);
+  background-color: rgba(255, 255, 255, 0.831);
 }
 
 #loader i {
