@@ -44,14 +44,15 @@ header #title {
 
 #a-sell {
   background-color: #fff;
-  padding: 10px;
+  padding: 12px;
   width: 170px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border-radius: 2px;
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color) !important;
+  /* border: 1px solid var(--primary-color); */
+  background: var(--primary-color);
+  color: #fff !important;
 }
 
 #a-sell i {
@@ -264,7 +265,7 @@ aside h1 {
 }
 
 .product-owner {
-  font-size: 12px;
+  /* font-size: 12px; */
   padding: 5px 0;
   border-radius: 2px;
   color: var(--primary-color);
@@ -308,8 +309,9 @@ aside h1 {
 }
 
 .product-price {
-  color: #2bccb1;
+  color: #888;
   font-family: rbtr;
+  font-size: 18px;
 }
 
 .product-locatiton {

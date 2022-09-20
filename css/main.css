@@ -19,11 +19,18 @@ input:-webkit-autofill {
   font-family: tt;
 }
 
+@font-face {
+  src: url(../assets/fonts/Abel-Regular.ttf);
+  font-family: tt;
+}
+
 /* --primary-color: #3f3f5a; */
 
 :root {
   --body-color: #f9f9f9; 
-  --primary-color: #d00a7e;
+  /* --primary-color: #d00a7e; */
+  /* --primary-color: #2bc; */
+  --primary-color: #241a74;
 }
 
 * {
@@ -43,8 +50,8 @@ header > div {
 
 #title {
   font-family: tt;
-  font-size: 30px;
-  margin-bottom: 30px;
+  font-size: 42px;
+  /* margin-bottom: 30px; */
 }
 
 button, input, select, textarea {
