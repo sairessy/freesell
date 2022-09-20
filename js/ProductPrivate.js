@@ -21,7 +21,7 @@ const ProductPrivate = (id, title, price, category, location, image) => {
       <div class="product-details">
         <div>
           <p class="product-title">${title}</p>
-          <p class="product-price">${price} MT</p>
+          <p class="product-price">${formatter.format(price)}</p>
           <p class="product-locatiton">${config.locations.filter(l => l.id == location)[0].label}</p>
         </div>
         <div class="product-more-details"><span><i class="la la-angle-right"></i></span></div>

@@ -25,7 +25,7 @@ const Product = (id, title, price, category, location, description, contact, dat
       <div class="product-details">
         <div>
           <p class="product-title">${title}</p>
-          <p class="product-price">${formatter.format(2005)}</p>
+          <p class="product-price">${formatter.format(price)}</p>
           ${companyName != "" ? 
           `<a href="seller.html?s=${user}" style="font-family: tt;" class="product-owner" id="${user}">
             ${cName}<i style="display: ${userChecked ? "inline-block" : "none"}" class="la la-check-circle"></i>
@@ -34,7 +34,7 @@ const Product = (id, title, price, category, location, description, contact, dat
           <p class="product-locatiton">${locationLabel}</p>
           <p class="product-date">${d.toLocaleString("pt-Br")}</p>
         </div>
-        <div class="product-more-details" onclick="showMoreInfo('${title}', '${price}', '${locationLabel}', '${description}', '${contact}')"><span><i class="la la-angle-right"></i></span></div>
+        <div class="product-more-details" onclick="showMoreInfo('${title}', '${formatter.format(price)}', '${locationLabel}', '${description}', '${contact}')"><span><i class="la la-angle-right"></i></span></div>
       </div>
     </div>
   `)
